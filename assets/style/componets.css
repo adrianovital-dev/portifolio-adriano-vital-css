@@ -1,0 +1,8 @@
+.btn__primary-md{
+    background-color: var(--blue);
+    color: var(--branco);
+    padding: 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: end;
+}

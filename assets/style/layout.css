@@ -1,0 +1,71 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: var(--degrade); 
+}
+
+.navbar__brand{
+    width: 150px;
+}
+
+.navbar__social{
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+    color: var(--black);
+}
+.navbar__menu{
+    display: flex;
+    gap: 1rem;
+    padding: 2rem; 
+    color: var(--black);
+    text-decoration: none;
+}
+
+.container{
+    width: 100vw;
+    height: 70vh;  
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+
+.about__imag{
+    width: 50vw;
+}
+
+.about__descricao{
+    width: 50vw;
+}
+.about__imag-perfil{
+    width: 40%;
+    border-radius: 50%;
+}
+
+.about__name{
+    color: var(--blue);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.about__name-job{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.about__greetings{
+    font-weight: 700;
+    margin: 1em 0;
+}
+
+.about__text{
+    margin: 2em 0;
+    
+}
+
+
