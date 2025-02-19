@@ -20,7 +20,15 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="navbar__social">
+            <ul class="navbar__menu">
+                <li><a href="index.html" class="navbar__menu-item">Home</a></li>
+                <li><a href="about.html" class="navbar__menu-item">About</a></li>
+                <li><a href="project.html" class="navbar__menu-item">Project</a></li>
+                <li><a href="contact.html" class="navbar__menu-item">Contact</a></li>
+            </ul>
+            <img src="/assets/img/others/Logo Adriano Vital.png" alt="" class="navbar__brand">
+            <div class="navbar__social social">
+                <a href="#"><i class="fa-brands fa-whatsapp navbar__social-item"></i></a>
                 <a href="#"><i class="fa-brands fa-github navbar__social-item"></i></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin navbar__social-item"></i></a>
                 <a href="#"><i class="fa-solid fa-envelope navbar__social-item"></i></a>
@@ -28,35 +36,77 @@
                 <a href="#"><i class="fa-brands fa-youtube navbar__social-item"></i></a>
             </div>
 
-            <img src="/assets/img/others/Logo Adriano Vital.png" alt="" class="navbar__brand">
-            <ul class="navbar__menu">
-                <li><a href="index.html" class="navbar__menu-item">Home</a></li>
-                <li><a href="about.html" class="navbar__menu-item">About</a></li>
-                <li><a href="project.html" class="navbar__menu-item">Project</a></li>
-                <li><a href="contact.html" class="navbar__menu-item">Contact</a></li>
-            </ul>
-            <a href="" class="btn__primary-md">Hire me</a>
+            <div class="about__btn">
+                <a href="" class="btn__secondary-md">Hire me</a>
+            </div>
+
         </nav>
     </header>
 
-    <section class="container">
-        <div class="about">
-            <div class="about__imag">
-                <img src="/assets/img/others/foto-perfil.png" alt="" class="about__imag-perfil">
-            </div>
-            <div class="about__descricao">
-                <p class="about__greetings">Hi, I'm</p>
-                <h1 class="about__name">Adriano Vital</h1>
-                <h2 class="about__name-job">a Front-end developer</h2>
-                <p class="about__text">Desde que comecei minha jornada como designer freelancer há 12 anos, fiz trabalho
-                    remoto para agências, dei consultoria para startups e colaborei com pessoas talentosas para criar
-                    produtos digitais para uso comercial e de consumidor. Sou silenciosamente confiante, naturalmente
-                    curioso e estou sempre trabalhando para melhorar minhas habilidades.
-                </p>
-                <a href="#" class="btn__primary-md">Contact me</a>
-            </div>
+    <section class="about container-70vh">
+        <div class="about__imag">
+            <img src="/assets/img/others/foto-perfil.png" alt="" class="about__imag-perfil">
+        </div>
+        <div class="about__descricao">
+            <p class="about__greetings">Hi, I'm</p>
+            <h1 class="about__name">Adriano Vital</h1>
+            <h2 class="about__name-job">Front-end developer</h2>
+            <h2 class="about__name-comp">HTML | CSS | Bootstrap | SAAS | Javascript | WordPres</h2>
+            <p class="about__text">Este é meu Website e Portfólio oficial.</p>
+            <p class="about__text">Desde que comecei minha jornada como designer freelancer há 12 anos, fiz trabalho
+                remoto para agências, dei consultoria para startups e colaborei com pessoas talentosas para criar
+                produtos digitais para uso comercial e de consumidor. Sou silenciosamente confiante, naturalmente
+                curioso e estou sempre trabalhando para melhorar minhas habilidades.
+            </p>
+            <a href="#" class="btn__primary-md">Contact me</a>
         </div>
     </section>
+
+<section class="skills">
+    <h2 class="skill_title">Minhas habilidades</h2>
+    <ul class="skill__item">
+        <li><i class="fa-brands fa-css"></i></li>
+        <li><i class="fa-brands fa-html5"></i></li>
+        <li><i class="fa-brands fa-bootstrap"></i></li>
+        <li><i class="fa-brands fa-sass"></i></li>
+        <li><i class="fa-brands fa-js"></i></li>
+        <li><i class="fa-brands fa-wordpress"></i></li>
+        <li><i class="fa-brands fa-react"></i></li>
+        <li><i class="fa-brands fa-square-git"></i></li>
+        <li></li>
+    </ul>
+</section>
+
+
+    <section class="contact__home container">
+        <h2 class="contact__home-title">Vamos Trabalhar</h2>
+        <h2 class="contact__home-title">Juntos</h2>
+
+        <div class="contact__home-text">
+            <p>Estou disponível para trabalho. Tem algum projeto em mente?</p>
+            <p>Sinta-se à vontade para entrar em contato comigo</p>
+        </div>
+
+        <div class="contact__social">
+            <a href="#"><i class="fa-brands fa-whatsapp contact__social-item"></i></a>
+            <a href="#"><i class="fa-brands fa-github contact__social-item"></i></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin contact__social-item"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope contact__social-item"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram contact__social-item"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube contact__social-item"></i></a>
+        </div>
+        <a href="#" class="btn__secondary-md">Entre em contato comigo</a>
+
+    </section>
+    
+    <hr />
+    <footer class="footer">
+        <div class="footer__copy">
+            <p class="footer__copy-text">&copy; 2025 Adriano Vital. All right reserved.</p>
+            <p class="footer__copy-text">Desenvolvido por <a href="#" class="footer__copy-bold">Adriano Vital</a></p>
+        </div>
+        
+    </footer>
 
 
 

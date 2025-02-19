@@ -4,11 +4,13 @@
 :root {
     --branco: #ffffff;
     --blue: #004efc;
-    --gray: #d3d2d0;
+    --gray: #dedede;
+    --gray-dark: #7c7c7d;
     --dark: #282522;
     --black: #000000;
     --degrade: linear-gradient(97.54deg, #282522 35.49%, #004efc 165.37%);
     --fonte-primaria: 'inter', sans-serif;
+    
     }
 
     
@@ -16,4 +18,5 @@
         font-family: var(--fonte-primaria);
         font-size: 16px;
         font-weight: 400;
+
     }

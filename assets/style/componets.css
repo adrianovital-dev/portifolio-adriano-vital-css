@@ -1,8 +1,18 @@
-.btn__primary-md{
-    background-color: var(--blue);
-    color: var(--branco);
+.btn__primary-md,
+.btn__secondary-md{
     padding: 1em;
     border-radius: 5px;
     text-decoration: none;
-    text-align: end;
+    text-align: center;
+
+}
+
+.btn__primary-md{
+    background-color: var(--blue);
+    color: var(--branco);
+}
+
+.btn__secondary-md{
+    color: var(--blue);
+    border: 1px solid var(--blue);
 }

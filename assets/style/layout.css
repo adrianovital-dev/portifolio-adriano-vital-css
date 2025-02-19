@@ -9,7 +9,7 @@
     width: 150px;
 }
 
-.navbar__social{
+.social{
     display: flex;
     gap: 1rem;
     padding: 2rem;
@@ -23,24 +23,31 @@
     text-decoration: none;
 }
 
-.container{
-    width: 100vw;
-    height: 70vh;  
+.container-70vh{
+    height: 70vh;
+    padding: 3em;  
+}
+
+.container-50vh{
+    height: 50vh;
+    padding: 3em; 
 }
 
 .about{
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 
 .about__imag{
-    width: 50vw;
+    height: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .about__descricao{
-    width: 50vw;
+    
 }
 .about__imag-perfil{
     width: 40%;
@@ -58,14 +65,72 @@
     font-weight: 700;
 }
 
+.about__name-comp{
+    padding: 1em 0;
+}
 .about__greetings{
     font-weight: 700;
     margin: 1em 0;
 }
 
 .about__text{
-    margin: 2em 0;
+    margin: 2em 0; 
+}
+
+/*End About*/
+
+/*Start Contact*/
+
+.contact__home{
+    background: var(--gray);
+    text-align: center;
+    padding: 5em;
+}
+
+.contact__home-title{
+    font-weight: 700;
+    font-size: 70px;
+    color: var(--dark);
+}
+
+.contact__social{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin: 4em;
     
 }
 
+.contact__home-text{
+    color: var(--gray-dark);
+    padding: 2em 0 2em 0;
+    font-size: 20;
+}
 
+.contact__social-item{
+    color: var(--gray-dark);
+
+}
+/*End Contact*/
+
+/*Start Footer*/
+
+hr{
+    margin: 0;
+}
+
+.footer__copy{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--gray);
+    padding: 1em 4em;
+    font-size: 12px;
+}
+
+.footer__copy-bold{
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--black);
+}
+
+/*End Footer*/
