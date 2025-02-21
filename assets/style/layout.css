@@ -6,7 +6,7 @@
 }
 
 .navbar__brand{
-    width: 150px;
+    width: 450px;
 }
 
 .social{
@@ -79,6 +79,26 @@
 
 /*End About*/
 
+/*Start projects*/
+
+.projects{
+    padding: 5em;
+    text-align: center;
+}
+
+.projects__text{
+    margin: 2em;
+}
+
+.projects__cards{
+   
+}
+
+
+
+/*End projects*/
+
+
 /*Start Contact*/
 
 .contact__home{
@@ -87,10 +107,12 @@
     padding: 5em;
 }
 
-.contact__home-title{
+.contact__home-title, 
+.projects__title {
     font-weight: 700;
     font-size: 70px;
     color: var(--dark);
+    text-align: center;
 }
 
 .contact__social{
