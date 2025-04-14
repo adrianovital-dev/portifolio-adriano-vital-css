@@ -1,0 +1,63 @@
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container-70vh{
+    height: 70vh;
+    padding: 3em;  
+}
+
+.container-50vh{
+    height: 50vh;
+    padding: 3em; 
+}
+
+.about{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+about__imag{
+    height: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.about__imag{
+    display: flex;
+}
+
+.about__descricao{
+    
+}
+.about__imag-perfil{
+    width: 40%;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.about__name{
+    color: var(--blue);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.about__name-job{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.about__name-comp{
+    padding: 1em 0;
+}
+.about__greetings{
+    font-weight: 700;
+    margin: 1em 0;
+}
+
+.about__text{
+    margin: 2em 0; 
+}

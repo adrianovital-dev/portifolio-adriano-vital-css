@@ -1,0 +1,32 @@
+.contact__home{
+    background: var(--gray);
+    text-align: center;
+    padding: 5em;
+}
+
+.contact__home-title, 
+.projects__title {
+    font-weight: 700;
+    font-size: 70px;
+    color: var(--dark);
+    text-align: center;
+}
+
+.contact__social{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin: 4em;
+    
+}
+
+.contact__home-text{
+    color: var(--gray-dark);
+    padding: 2em 0 2em 0;
+    font-size: 20;
+}
+
+.contact__social-item{
+    color: var(--gray-dark);
+
+}

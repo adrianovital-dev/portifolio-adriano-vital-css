@@ -1,0 +1,17 @@
+hr{
+    margin: 0;
+}
+
+.footer__copy{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--gray);
+    padding: 1em 4em;
+    font-size: 12px;
+}
+
+.footer__copy-bold{
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--black);
+}
