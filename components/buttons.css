@@ -1,10 +1,9 @@
 .btn__primary-md,
 .btn__secondary-md{
-    padding: 1em;
-    border-radius: 5px;
+    padding: 0.3em 1em;
+    border-radius: 7px;
     text-decoration: none;
     text-align: center;
-
 }
 
 .btn__primary-md{

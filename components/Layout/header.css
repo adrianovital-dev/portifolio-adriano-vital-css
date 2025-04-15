@@ -1,24 +1,33 @@
-.navbar{
+.nav{
     display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    background-color: var(--degrade); 
+    justify-content:space-between;
 }
 
-.navbar__brand{
-    width: 450px;
+.nav__logo{
+    text-align: left;
+
+
 }
 
-.social{
-    display: flex;
-    gap: 1rem;
-    padding: 2rem;
-    color: var(--black);
+.nav__brand{
+    width: 250px;
+    margin: 1em 0;
 }
-.navbar__menu{
+
+.nav__menu{
     display: flex;
-    gap: 1rem;
-    padding: 2rem; 
-    color: var(--black);
+    gap: 1.5em;
     text-decoration: none;
+    margin: 2em 0;
+
+}
+
+.nav__menu-item{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 12px;
+}
+
+.nav__btn{
+    margin: 2em 0;
 }
