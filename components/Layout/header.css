@@ -1,3 +1,18 @@
+header{
+    height: 7vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--white);
+    padding: 1em 2em;
+}
+
+header.scrolled {
+    box-shadow: 0px 4px 4px var(--gray); /* Sombra visível ao rolar */
+}
+
 .nav{
     display: flex;
     justify-content:space-between;
@@ -5,8 +20,6 @@
 
 .nav__logo{
     text-align: left;
-
-
 }
 
 .nav__brand{
@@ -25,7 +38,15 @@
 .nav__menu-item{
     text-decoration: none;
     color: var(--black);
-    font-size: 12px;
+    font-size: 14px;
+}
+
+.dark__mode{
+    display: flex;
+    align-items: center;
+}
+.dark__mode-item{
+    font-size: 30px;
 }
 
 .nav__btn{

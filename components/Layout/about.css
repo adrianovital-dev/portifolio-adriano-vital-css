@@ -1,43 +1,91 @@
 .container {
-    height: 100vh;
+    
+}
+.about_geral{
+    height: 90vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.about{
+.about {
     display: grid;
     grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 0 2em;
+    margin: 2em auto;
 }
 
-.about__imag{
-    text-align:justify;
+.about__imag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.about__imag-perfil{
-    width: 60%;
-    border-radius: 50%;
+.about__imag-perfil {
+    max-width: 50%;
+    height: auto;
 }
 
-.about__description{
+.about__description {
     margin: 0 3em 0 0;
 }
 
-.about__description-name{
+.about__description-name,
+.about__description-job,
+.about__description-greetings {
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0.3em 0;
+}
+
+.about__description-name {
     color: var(--blue);
+}
+
+
+.about__description-text {
+    margin: 1.2em 0;
+    text-align: justify;
+}
+
+.about__btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 0;
+}
+
+
+.about__btn-social-item {
+    color: var(--black);
     font-size: 20px;
-    font-weight: 700;
+    margin: .3em;
+    text-align: center;
 }
 
-.about__description-job{
+.about__banner{
+    display: flex;
+    background: var(--blue);
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.about__banner-log{
+    height: 50px;
+}
+
+.about_banner-text{
+    color: var(--branco);
     font-size: 20px;
-    font-weight: 700;
+    margin: 0.5em 0;
+    text-align: center;
+    font-weight: 400;
+
 }
 
-
-.about__description-greetings{
-    font-weight: 700;
-    margin: 1em 0;
-}
-
-.about__description-text{
-    margin: 2em 0;
-    text-align:justify; 
-}
