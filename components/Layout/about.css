@@ -1,29 +1,32 @@
-.container {
-    
-}
+
 .about_geral{
-    height: 90vh;
+    height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-sizing: border-box;
+    padding-top: 10vh;
+    overflow: hidden;
 }
 
 .about {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex: 1;
+    text-align: center;
     gap: 2em;
-    padding: 0 2em;
-    margin: 2em auto;
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
 .about__imag {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    flex: 1;
 }
 
 .about__imag-perfil {
@@ -32,7 +35,8 @@
 }
 
 .about__description {
-    margin: 0 3em 0 0;
+    flex: 1;
+
 }
 
 .about__description-name,
@@ -41,6 +45,7 @@
     font-weight: 700;
     font-size: 40px;
     margin: 0.3em 0;
+    text-align: left;
 }
 
 .about__description-name {
@@ -56,15 +61,22 @@
 .about__btn {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 3em 0;
 }
 
 
 .about__btn-social-item {
-    color: var(--black);
+    color: var(--gray-dark);
     font-size: 20px;
     margin: .3em;
     text-align: center;
+}
+
+.about__btn-social-item:hover {
+    color: var(--blue);
+    transition: 0.3s;
+    font-size: 22px;
 }
 
 .about__banner{
@@ -72,8 +84,7 @@
     background: var(--blue);
     justify-content: center;
     align-items: center;
-    
-    
+    height: 10vh;
 }
 
 .about__banner-log{
@@ -81,11 +92,10 @@
 }
 
 .about_banner-text{
-    color: var(--branco);
+    color: var(--white);
     font-size: 20px;
     margin: 0.5em 0;
     text-align: center;
     font-weight: 400;
-
 }
 

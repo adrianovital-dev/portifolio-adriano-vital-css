@@ -1,12 +1,14 @@
 header{
-    height: 7vh;
+    height: 10vh;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
     background-color: var(--white);
-    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header.scrolled {
@@ -14,8 +16,13 @@ header.scrolled {
 }
 
 .nav{
+    width: 100%;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between; /* Espaça os itens do menu e do botão */
+    align-items: center;
+    padding: 0 2em;
+    margin-left: 3em;
+    margin-right: 1em;
 }
 
 .nav__logo{
@@ -24,14 +31,13 @@ header.scrolled {
 
 .nav__brand{
     width: 250px;
-    margin: 1em 0;
+
 }
 
 .nav__menu{
     display: flex;
     gap: 1.5em;
     text-decoration: none;
-    margin: 2em 0;
 
 }
 
@@ -41,14 +47,24 @@ header.scrolled {
     font-size: 14px;
 }
 
-.dark__mode{
-    display: flex;
-    align-items: center;
-}
-.dark__mode-item{
-    font-size: 30px;
+.nav__menu-item:hover{
+    color: var(--blue);
 }
 
+
 .nav__btn{
-    margin: 2em 0;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 0;
+}
+
+.nav__btn .btn__secondary-md {
+    padding: 0.5em 1em;
+    font-size: 14px;
+}
+
+.dark__mode-item {
+    font-size: 30px; 
+    cursor: pointer; 
 }

@@ -8,10 +8,26 @@
 
 .btn__primary-md{
     background-color: var(--blue);
-    color: var(--branco);
+    color: var(--white);
 }
 
 .btn__secondary-md{
     color: var(--blue);
     border: 1px solid var(--blue);
+}
+
+.btn__primary-md:hover{
+    padding: 0.6em 1.4em;
+    background-color: var(--blue-houver);
+    color: var(--white);
+    border: 1px solid var(--blue);
+    transition: 0.3s;
+}
+
+.btn__secondary-md:hover{
+    padding: 0.6em 1.4em;
+    background-color: var(--blue);
+    color: var(--white);
+    border: 1px solid var(--blue);
+    transition: 0.3s;
 }

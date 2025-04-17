@@ -19,6 +19,7 @@
 :root {
     --white: #ffffff;
     --blue: #073ca2;
+    --blue-houver: #032f82;
     --gray: #f5f5f5;
     --gray-dark: #7c7c7d;
     --dark: #282522;
@@ -31,6 +32,32 @@
     body{
         font-family: var(--fonte-primaria);
         font-size: 16px;
-        font-weight: 400;
-        
+        font-weight: 400;        
+    }
+
+
+    .container {
+    height: 100vh;
+    }
+
+    h1{
+        font-size: 25px;
+        color: var(--black);
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    h2{
+        font-size: 40px;
+        font-weight: 700;
+        color: var(--blue);
+        text-align: center;
+    }
+
+    h4{
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--black);
+        text-align: center;
+        margin-top: 0.5em;
     }
