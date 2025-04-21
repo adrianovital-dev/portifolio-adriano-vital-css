@@ -1,0 +1,92 @@
+.skills__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 2em;
+    margin: 0 3em;
+}
+
+.skills_interpersonal,
+.skills__tecnology {
+    width: 100%; 
+    box-sizing: border-box;
+    margin: 2.5em 0;
+}
+
+
+
+.skills_interpersonal ul {
+    list-style: disc;
+    padding: 0 3em;
+    
+}
+
+.skills_interpersonal li {
+    display: list-item;
+}
+
+.skills_interpersonal-title,
+.skills__tecnology-title{
+    font-size: 20px;
+    margin: 1em 0;
+    font-weight: 600;
+}
+
+.skills__tecnology-title-shortly{
+    font-size: 18px;
+    margin: 1.3em 0;
+    font-weight: 400;
+}
+
+.skills__interpersonal-list{
+    margin: 1em 0;
+}
+.skills__interpersonal-item{
+    margin: 0.50em 0;
+}
+
+.skills__btn-title{
+    margin-top: 5em;
+    margin-bottom: 2em;
+    font-weight: 500;
+}
+
+
+.skill__tecnology-item{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7em;
+}
+
+
+
+.skill__tecnology-item li {
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo verticalmente */
+    height: 70px;
+    width: 70px; /* Largura fixa para os itens */
+    align-items: center; /* Centraliza o ícone e o texto */
+    justify-content: center; /* Centraliza verticalmente */
+    list-style: none; /* Remove o estilo de lista */
+    border: 1px solid var(--gray-light); /* Adiciona uma borda suave */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 1em; /* Espaçamento interno */
+    background-color: var(--white); /* Fundo branco */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    text-align: center; /* Centraliza o texto */
+    transition: all 0.3s ease;
+    font-size: 12px;
+}
+
+
+.skill__tecnology-item li i {
+    margin-bottom: 0.2em;
+    color: var(--black); /* Cor do ícone */
+    font-size: 35px;
+
+}
+
+.skill__tecnology-item li:hover {
+    transform: translateY(-2px); /* Efeito de elevação */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais forte no hover */
+}

@@ -2,13 +2,14 @@
 @import url(/components/buttons.css);
 @import url(/components/forms.css);
 @import url(/components/Layout/header.css);
-@import url(/components/Layout/about.css);
+@import url(/components/Layout/banner.css);
 @import url(/components/Layout/service.css);
 @import url(/components/Layout/skills.css);
+@import url(/components/Layout/budget.css);
 @import url(/components/Layout/projects.css);
-@import url(/components/Layout/client.css);
+@import url(/components/Layout/testimonials.css);
 @import url(/components/Layout/blog.css);
-@import url(/components/Layout/faqs.css);
+@import url(/components/Layout/faq.css);
 @import url(/components/Layout/contact.css);
 @import url(/components/Layout/footer.css);
 @import url(/components/forms.css);
@@ -18,7 +19,7 @@
 
 :root {
     --white: #ffffff;
-    --blue: #073ca2;
+    --blue: #002fa7;
     --blue-houver: #032f82;
     --gray: #f5f5f5;
     --gray-dark: #7c7c7d;

@@ -1,5 +1,5 @@
 
-.about_geral{
+.banner{
     height: 100vh;
     margin: 0;
     display: flex;
@@ -10,7 +10,7 @@
     overflow: hidden;
 }
 
-.about {
+.banner__content {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -18,47 +18,47 @@
     flex: 1;
     text-align: center;
     gap: 2em;
-    margin-left: 3em;
-    margin-right: 3em;
+    margin-left: 4em;
+    margin-right: 4em;
 }
 
-.about__imag {
+.banner__imag {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
 }
 
-.about__imag-perfil {
+.banner__imag-perfil {
     max-width: 50%;
     height: auto;
 }
 
-.about__description {
+.banner__description {
     flex: 1;
 
 }
 
-.about__description-name,
-.about__description-job,
-.about__description-greetings {
+.banner__description-name,
+.banner__description-job,
+.banner__description-greetings {
     font-weight: 700;
     font-size: 40px;
     margin: 0.3em 0;
     text-align: left;
 }
 
-.about__description-name {
+.banner__description-name {
     color: var(--blue);
 }
 
 
-.about__description-text {
+.banner__description-text {
     margin: 1.2em 0;
     text-align: justify;
 }
 
-.about__btn {
+.banner__btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,20 +66,20 @@
 }
 
 
-.about__btn-social-item {
+.banner__btn-social-item {
     color: var(--gray-dark);
     font-size: 20px;
     margin: .3em;
     text-align: center;
 }
 
-.about__btn-social-item:hover {
+.banner__btn-social-item:hover {
     color: var(--blue);
     transition: 0.3s;
     font-size: 22px;
 }
 
-.about__banner{
+.banner__tecnologies{
     display: flex;
     background: var(--blue);
     justify-content: center;
@@ -87,11 +87,11 @@
     height: 10vh;
 }
 
-.about__banner-log{
+.banner__tecnologies-log{
     height: 50px;
 }
 
-.about_banner-text{
+.banner_tecnologies-text{
     color: var(--white);
     font-size: 20px;
     margin: 0.5em 0;
