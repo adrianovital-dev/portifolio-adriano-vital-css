@@ -1,0 +1,58 @@
+
+.blog__content {
+    display: grid; /* Ativa o Grid Layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Define colunas responsivas */
+    gap: 2em; /* Espaçamento entre os cards */
+    margin: 3em 3em; /* Margem lateral */
+}
+
+.blog__card-right{
+    gap: 0.80em; /* Espaçamento entre os cards */
+    display: grid; /* Ativa o Flexbox para o card direito */
+}
+
+.blog__card-right-img {
+    width: 33%;
+    height: auto;
+    border-radius: 8px;
+    margin-right:0.70em ;
+    
+}
+
+.blog__card-left-img {
+    width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
+    max-height: 100%; /* Limita a altura máxima da imagem */
+    border-radius: 8px;
+}
+
+.blog__card{
+    display: flex;
+
+}
+
+
+
+.blog__card-title{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0.3em 0;
+    color: var(--blue);
+}
+
+.blog__card-titles{
+    margin: 0.3em 0.3em;
+}
+
+.blog__card-text{
+    margin: 0.3em 0;
+}
+
+.blog__link{
+    color: var(--blue);
+}
+
+
+.blog__btn{
+    text-align: center;
+    margin: 3em 0;
+}

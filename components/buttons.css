@@ -2,21 +2,31 @@
 .btn__defaut-outline,
 .btn__light-solid,
 .btn__light-outline{
-    padding: 0.5em 1.3em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.8em 1.3em;
     border-radius: 7px;
     text-decoration: none;
     text-align: center;
     align-items: center;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
 }
 
 .btn__defaut-solid{
-    background-color: var(--blue);
     color: var(--white);
+    background-color: var(--blue); 
+
 }
 
 .btn__light-solid{
     background-color: var(--white);
     color: var(--blue);
+    display: inline-block;
+    margin: 1em 0;
     
 }
 
@@ -38,7 +48,6 @@
 }
 
 .btn__defaut-solid:hover{
-    padding: 0.6em 1.4em;
     background-color: var(--blue-houver);
     color: var(--white);
     border: 1px solid var(--blue);
@@ -46,17 +55,16 @@
 }
 
 .btn__defaut-outline:hover{
-    padding: 0.6em 1.4em;
     background-color: var(--blue);
     color: var(--white);
     transition: 0.3s;
 }
 
 .btn__light-solid:hover{
-    padding: 0.6em 1.4em;
     background-color: var(--blue);
     color: var(--white);
     transition: 0.3s;
     border: 1px solid var(--white);
+    display: inline-block;
 }
 
