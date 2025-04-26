@@ -1,58 +1,76 @@
 
+
 .blog__content {
-    display: grid; /* Ativa o Grid Layout */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Define colunas responsivas */
-    gap: 2em; /* Espaçamento entre os cards */
-    margin: 3em 3em; /* Margem lateral */
-}
-
-.blog__card-right{
-    gap: 0.80em; /* Espaçamento entre os cards */
-    display: grid; /* Ativa o Flexbox para o card direito */
-}
-
-.blog__card-right-img {
-    width: 33%;
-    height: auto;
-    border-radius: 8px;
-    margin-right:0.70em ;
+    display: grid;
+    grid-template-columns: 0.40fr 0.60fr;
+    align-items: center;
+    gap: 2em;
+    margin: 2em 12em;
     
 }
 
+.blog__card-left{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+    height: 100%; /* Garante que o contêiner ocupe toda a altura disponível */
+    padding: 1em; /* Adiciona espaçamento interno, se necessário */
+    box-sizing: border-box; /* Inclui padding e bordas no tamanho total */
+}
+
+
+
 .blog__card-left-img {
-    width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
-    max-height: 100%; /* Limita a altura máxima da imagem */
-    border-radius: 8px;
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    margin: 1em 0; /* Adiciona espaçamento externo */
 }
 
 .blog__card{
     display: flex;
-
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
 }
 
 
 
-.blog__card-title{
-    font-size: 20px;
+.blog__card-right-img {
+    width: auto;
+    height: 90px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin: 1em 0;
+}
+
+
+
+.blog__card-title {  
+    font-size: 17px;
     font-weight: 600;
-    margin: 0.3em 0;
     color: var(--blue);
 }
 
-.blog__card-titles{
+.blog__card-left-title{
+    width: 100%;
     margin: 0.3em 0.3em;
+    text-align: left;
 }
 
-.blog__card-text{
+.blog__card-text {
     margin: 0.3em 0;
 }
 
-.blog__link{
+.blog__link {
     color: var(--blue);
+    font-size: 14px;
 }
 
 
-.blog__btn{
+.blog__btn {
     text-align: center;
-    margin: 3em 0;
 }

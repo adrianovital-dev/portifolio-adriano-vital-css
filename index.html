@@ -353,7 +353,7 @@
             <div class="blog__card-left">
                 <img src="/assets/blog/23.webp" alt="" class="blog__card-left-img">
                 <div class="blog__card-content">
-                    <div class="blog__card-titles">
+                    <div class="blog__card-left-titles">
                         <h3 class="blog__card-title">Minimal UI Designer: Benefits and Pratctices</h3>
                         <p class="blog__card-text">Coleta de informações sobre o propósito do site, público-alvo,
                             funcionalidades...</p>
@@ -365,7 +365,7 @@
                 <div class="blog__card">
                     <img src="/assets/blog/29.webp" alt="" class="blog__card-right-img">
                     <div class="blog__card-content">
-                        <div class="blog__card-titles">
+                        <div class="blog__card-right-titles">
                             <h3 class="blog__card-title">Minimal UI Designer: Benefits and Pratctices</h3>
                             <p class="blog__card-text">Coleta de informações sobre o propósito do site, público-alvo,
                                 funcionalidades...</p>
@@ -404,24 +404,91 @@
         </div>
     </section>
 
-    <section class="contact__home container">
-        <h2 class="contact__home-title">Vamos Trabalhar</h2>
-        <h2 class="contact__home-title">Juntos</h2>
+    <section class="faqs">
+        <h1>-FAQS</h1>
+        <h2>Any Questions?</h2>
+        <h4>The answer may already be here!</h4>
 
-        <div class="contact__home-text">
-            <p>Estou disponível para trabalho. Tem algum projeto em mente?</p>
-            <p>Sinta-se à vontade para entrar em contato comigo</p>
+    </section>
+
+    <section class="contact">
+        <div class="contact__left">
+            <h1>Let’s create</h1>
+            <h2>together</h2>
+            <h4>Ready to elevate you digital presence?</h4>
+            <p class="contact__left-text">Contact us to discuss how lahAgency can transform your ideas into visually
+                captivating realities that
+                drive
+                results.</p>
+            <div class="contact__content">
+                <div class="contact__content-phone">
+                    <p class="contact__title">Telefone + WhatsApp</p>
+                    <p class="contact__number">+55 11 9 9999-9999</p>
+                </div>
+                <div class="contact__content-email">
+                    <p class="contact__title">Email</p>
+                    <p class="contact__number">adrianovital.dev@gmail.com</p>
+                </div>
+            </div>
+            <div class="contact__container">
+                <p class="contact__title">Social network</p>
+                <div class="contact__social">
+                    <a href="#"><i class="fa-brands fa-whatsapp contact__social-item"></i></a>
+                    <a href="#"><i class="fa-brands fa-github contact__social-item"></i></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin contact__social-item"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope contact__social-item"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram contact__social-item"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube contact__social-item"></i></a>
+                </div>
+            </div>
+            <p class="contact__left-text">Sinta-se à vontade para entrar em contato comigo enviando o formulário ao
+                lado, e entrarei em contato com você o mais breve possível.</p>
+
         </div>
 
-        <div class="contact__social">
-            <a href="#"><i class="fa-brands fa-whatsapp contact__social-item"></i></a>
-            <a href="#"><i class="fa-brands fa-github contact__social-item"></i></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin contact__social-item"></i></a>
-            <a href="#"><i class="fa-solid fa-envelope contact__social-item"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram contact__social-item"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube contact__social-item"></i></a>
+        <div class="contact__right">
+            <div class="contact__right-form">
+                <form class="form-contato" id="formContato">
+                    <input type="hidden" name="assunto" value="Mensagem recebida pelo site!">
+                    <div class="campo-form">
+                        <label for="nome">Your Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Ex. John Doe" required>
+                    </div>
+                    <div class="campo-form">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="exemple@exemple.com" required>
+                    </div>
+
+                    <div class="line-telephone">
+                        <div class="campo-form pequeno">
+                            <label for="ddd">Country:</label>
+                            <input type="text" id="pais" name="pais" placeholder="Ex. Brazil" required>
+                        </div>
+
+                        <div class="campo-form">
+                            <label for="telephone">Telephone:</label>
+                            <input type="text" id="telephone" name="telephone" placeholder="+55 27 99999-9999 "required>
+                        </div>
+                    </div>
+
+
+                    <div class="campo-form">
+                        <label for="mensagem">Your Mensage:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Enter here..." required></textarea>
+                    </div>
+
+                    <div class="button-container">
+                        <button type="submit" id="enviarEmail">Enviar via Email</button>
+                        <button type="button" id="enviarWhatsapp">Enviar via WhatsApp</button>
+                      </div>
+                      
+                </form>
+            </div>
+
         </div>
-        <a href="#" class="btn__defaut-outline">Entre em contato comigo</a>
+
+
+
 
     </section>
 
@@ -435,7 +502,31 @@
 
     </footer>
 
+    <script>
+        // Salva a posição do scroll antes de recarregar
+        window.addEventListener('beforeunload', () => {
+            localStorage.setItem('scrollPosition', window.scrollY);
+        });
+
+        // Restaura a posição do scroll após recarregar
+        window.addEventListener('load', () => {
+            const scrollPosition = localStorage.getItem('scrollPosition');
+            if (scrollPosition) {
+                window.scrollTo(0, parseInt(scrollPosition));
+            }
+        });
+    </script>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("oEYsGdLAnoxYWUDfh"); // inicializa o EmailJS
+        })();
+    </script>
+
+
     <script src="scripts/header.js"></script>
+    <script src="scripts/form.js"></script>
 
 </body>
 
