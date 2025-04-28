@@ -105,12 +105,3 @@
     cursor: pointer;
   }
   
-  #enviarEmail {
-    background-color: var(--blue); /* Cor para Email */
-    color: white;
-  }
-  
-  #enviarWhatsapp {
-    background-color: #25D366; /* Cor do WhatsApp */
-    color: white;
-  }
