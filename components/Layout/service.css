@@ -1,43 +1,61 @@
 
-.service__cards{
+.service__content{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
-    gap: 2em;
-    padding: 2em;
+    align-items: center;
+    gap: 1em;
+    padding: 1.5em 0;
     
 }
 
 .service__card {
-    width: 280px;
-    height: 320px;
-    padding: 2em;
+    display: flex; /* Ativa o Flexbox */
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    justify-content: space-between; /* Garante que o botão fique no final */
+    align-items: flex-start;
+    width: 225px;
+    height: 385px;
+    padding: 1.5em;
     margin: 0;
-    border-radius: 25px;
-    background-color: var(--gray);
+    border-radius: 28px;
+    background-color: var(--gray-extra-light);
+    text-align: left;
+    
 
 }
 
 .service__cards-img {
-    display: block;
-    margin: 0 auto;
     width: 30%;
-    height: auto; 
+     
 }
 
 .service__cards-title{
+    text-align: left;
+    font-size: 28px;
+    width: 70%;
+    line-height: 1.2em;
     margin: 1em 0;
+    font-weight: 500;
 }
 
 .service__cards-icon{
-    margin: 0.5em 0;
+    margin: 0.2em 0;
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--blue);
 }
 
-.service__btn-whatsapp{
-    color: var(--white);
-    margin: 0.5em;
-    font-size: 18px;
+.service__cards-list li{
+    font-size: 14px;
 }
+
+.service__btn {
+    margin-top: auto; /* Empurra o botão para o final do card */
+    align-self: stretch; /* Faz o botão ocupar toda a largura do card, se necessário */
+}
+
+
 
 
 /* mobile */
@@ -52,15 +70,14 @@
 /* Laptop */
 @media (min-width: 1025px) and (max-width: 1279px) {
     .service__card {
-        width: 150px;
-    }
+            }
   }
 
 
 /* desktops */
 @media (min-width: 1280px) and (max-width: 1535px) {
     .service__card {
-        width: 210px;
+        
     }
   }
   

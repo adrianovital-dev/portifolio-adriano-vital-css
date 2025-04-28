@@ -5,13 +5,33 @@ hr{
 .footer__copy{
     display: flex;
     justify-content: space-between;
-    background-color: var(--gray);
+    align-items: center;
     padding: 1em 4em;
     font-size: 12px;
 }
 
-.footer__copy-bold{
-    font-weight: 700;
-    text-decoration: none;
+.footer__copy-text-copy{
+    text-align: left;
     color: var(--black);
+    
+    
+}
+
+.footer__text-bold-color{
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 15px;
+    
+} 
+
+.footer__copy-text-by{
+    text-align: right;
+    margin-left: auto; 
+    
+}
+
+.footer__copy-bold {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 15px;
 }

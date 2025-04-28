@@ -2,11 +2,12 @@
 .btn__defaut-outline,
 .btn__light-solid,
 .btn__light-outline{
+    font: var(--fonte-primaria);
     display: inline-flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0.8em 1.3em;
+    padding: 0.7em 1.5em;
     border-radius: 7px;
     text-decoration: none;
     text-align: center;
@@ -16,22 +17,59 @@
     transition: all 0.3s ease;
 }
 
+/* Start btn__defaut-solid */
+
 .btn__defaut-solid{
     color: var(--white);
     background-color: var(--blue); 
-
 }
+
+.btn__defaut-solid:hover{
+    background-color: var(--blue-hover);
+    color: var(--white);
+    border: 1px solid var(--blue);
+    transition: 0.3s;
+}
+
+.btn__defaut-icon{
+    color: var(--white);
+    margin-right: 0.5em;
+    font-size: 20px;
+}
+
+/* End btn__defaut-solid */
+
+/* Start btn__defaut-outline */
+
+.btn__defaut-outline{
+    color: var(--blue);
+    border: 1px solid var(--blue); 
+}
+
+.btn__defaut-outline:hover{
+    background-color: var(--blue);
+    color: var(--white);
+    transition: 0.3s;
+}
+
+.btn__defaut-outline-icon{
+    color: var(--blue);
+    margin-right: 0.5em;
+    font-size: 20px;
+}
+
+/* End btn__defaut-outline */
+
+/* Start btn__light-solid */
 
 .btn__light-solid{
     background-color: var(--white);
     color: var(--blue);
     display: inline-block;
     margin: 1em 0;
-    
 }
 
 .btn__light-solid-icon{
-    background-color: var(--white);
     color: var(--blue);
     font-size: 18px;
     margin-right: 0.5em;
@@ -42,24 +80,6 @@
     border: 1px solid var(--white);
 }
 
-.btn__defaut-outline{
-    color: var(--blue);
-    border: 1px solid var(--blue);
-}
-
-.btn__defaut-solid:hover{
-    background-color: var(--blue-houver);
-    color: var(--white);
-    border: 1px solid var(--blue);
-    transition: 0.3s;
-}
-
-.btn__defaut-outline:hover{
-    background-color: var(--blue);
-    color: var(--white);
-    transition: 0.3s;
-}
-
 .btn__light-solid:hover{
     background-color: var(--blue);
     color: var(--white);
@@ -67,4 +87,5 @@
     border: 1px solid var(--white);
     display: inline-block;
 }
+/* End btn__light-solid*/
 

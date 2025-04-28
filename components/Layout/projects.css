@@ -25,9 +25,9 @@
     height: 420px;
     width: 290px;
     margin: 2em 1em;
-    border: 1px solid var(--gray-light);
+    border: 1px solid var(--gray-lighter);
     border-radius: 8px; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px var(--gray-lighter);
     transition: all 0.3s ease;
     background-color: var(--white);
     overflow: hidden;

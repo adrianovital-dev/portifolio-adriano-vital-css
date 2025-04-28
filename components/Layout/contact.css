@@ -1,8 +1,12 @@
 .contact {
     display: grid;
-    grid-template-columns: 0.40fr 0.60fr;
-    gap: 2em;
+    grid-template-columns: 0.50fr 0.50fr;
+    
     margin: 2em 3em;
+}
+
+.contact__left{
+  padding: 0 4em;
 }
 
 .contact__content {
@@ -18,31 +22,36 @@
     margin: 0.3em 0;
 }
 
-.contact__social {
-    
-}
 
 .contact__social-item {
     text-align: left;
-    font-size: 20px;
-    color: var(--gray-dark);
+    font-size: 25px;
+    color: var(--gray-medium);
     margin: 0.3em 0.3em;
 }
 
-.contact__left-text{
-    margin: 2em 0;
-    text-align: center;
-    font-size: 14px;
-    color: var(--gray-dark);
+.contact__social-item:hover{
+    color: var(--blue);
+    border: 1px solid var(--blue-light);
+    transition: 0.3s;
 }
 
+.contact__left-text{
+    margin: 4em 0;
+    text-align: center;
+    font-size: 14px;
+    color: var(--gray);
+}
+
+
+
 .contact__right-form{
-    max-width: 600px;
+    max-width: 550px;
     margin: 50px auto;
     padding: 30px;
-    background: #ffffff;
+    background: var(--white);
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px var(--gray-lighter);
 }
 
 .form-contato {
@@ -59,17 +68,18 @@
   .campo-form label {
     margin-bottom: 5px;
     font-weight: 600;
-    color: #333;
+    color: var(--gray);
   }
   
   .campo-form input,
   .campo-form textarea {
     padding: 12px 15px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--gray-extra-light);
     border-radius: 8px;
     font-size: 1rem;
-    background: #f9f9f9;
+    background: var(--gray-extra-light);
     transition: border-color 0.3s, background 0.3s;
+    font: var(--fonte-primaria);
   }
 
   .line-telephone {
@@ -78,7 +88,7 @@
   }
   
   .line-telephone .campo-form.pequeno {
-    flex: 0 0 80px; /* largura fixa pro DDD */
+    flex: 0 0 80px; /* largura fixa pro CO */
   }
   
   .line-telephone .campo-form {
@@ -87,21 +97,17 @@
   
   .campo-form input:focus,
   .campo-form textarea:focus {
-    border-color: #4a90e2;
-    background: #fff;
+    border-color: var(--gray-lighter);
+    background: var(--gray-ultra-light);
     outline: none;
   }
   
   .button-container {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content:right;
+    gap: 1em;
+    margin-top: 15px;
   }
   
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
+ 
   

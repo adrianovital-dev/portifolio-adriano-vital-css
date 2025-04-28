@@ -68,11 +68,11 @@
     align-items: center; /* Centraliza o ícone e o texto */
     justify-content: center; /* Centraliza verticalmente */
     list-style: none; /* Remove o estilo de lista */
-    border: 1px solid var(--gray-light); /* Adiciona uma borda suave */
-    border-radius: 8px; /* Bordas arredondadas */
+    border: 1px solid var(--gray-lighter); /* Adiciona uma borda suave */
+    border-radius: 20px; /* Bordas arredondadas */
     padding: 1em; /* Espaçamento interno */
     background-color: var(--white); /* Fundo branco */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    box-shadow: 0 2px 4px var(--gray-lighter); /* Sombra leve */
     text-align: center; /* Centraliza o texto */
     transition: all 0.3s ease;
     font-size: 12px;
@@ -81,12 +81,12 @@
 
 .skill__tecnology-item li i {
     margin-bottom: 0.2em;
-    color: var(--black); /* Cor do ícone */
+    color: var(--gray); /* Cor do ícone */
     font-size: 35px;
 
 }
 
 .skill__tecnology-item li:hover {
     transform: translateY(-2px); /* Efeito de elevação */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais forte no hover */
+    box-shadow: 0 4px 8px var(--gray-lighter); /* Sombra mais forte no hover */
 }
