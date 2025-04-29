@@ -1,12 +1,10 @@
 
 .banner{
     height: 100vh;
-    margin: 0;
+    padding-top: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
-    padding-top: 10vh;
     overflow: hidden;
 }
 
@@ -18,8 +16,8 @@
     flex: 1;
     text-align: center;
     gap: 2em;
-    margin-left: 4em;
-    margin-right: 4em;
+    margin-left: 10em;
+    margin-right: 15em;
 }
 
 .banner__imag {
@@ -30,7 +28,7 @@
 }
 
 .banner__imag-perfil {
-    max-width: 50%;
+    max-width: 70%;
     height: auto;
 }
 

@@ -21,20 +21,22 @@
 
 .btn__defaut-solid{
     color: var(--white);
-    background-color: var(--blue); 
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
+    
 }
 
 .btn__defaut-solid:hover{
     background-color: var(--blue-hover);
     color: var(--white);
-    border: 1px solid var(--blue);
-    transition: 0.3s;
+    
+    
 }
 
 .btn__defaut-icon{
     color: var(--white);
     margin-right: 0.5em;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 /* End btn__defaut-solid */
@@ -43,19 +45,24 @@
 
 .btn__defaut-outline{
     color: var(--blue);
-    border: 1px solid var(--blue); 
+    border: 2px solid var(--blue); 
+    
 }
 
 .btn__defaut-outline:hover{
     background-color: var(--blue);
+    border: 2px solid var(--blue);
     color: var(--white);
-    transition: 0.3s;
+    
 }
 
 .btn__defaut-outline-icon{
     color: var(--blue);
-    margin-right: 0.5em;
-    font-size: 20px;
+    margin: 0 0.5em;
+    font-size: 18px;
+}
+.btn__defaut-outline:hover .btn__defaut-outline-icon {
+    color: var(--white);
 }
 
 /* End btn__defaut-outline */
@@ -71,21 +78,19 @@
 
 .btn__light-solid-icon{
     color: var(--blue);
-    font-size: 18px;
     margin-right: 0.5em;
+    font-size: 20px;
+    transition: color 0.3s ease;
 }
 
-.btn__light-outline{
+.btn__light-solid:hover .btn__light-solid-icon {
     color: var(--white);
-    border: 1px solid var(--white);
 }
 
 .btn__light-solid:hover{
     background-color: var(--blue);
     color: var(--white);
-    transition: 0.3s;
     border: 1px solid var(--white);
-    display: inline-block;
 }
 /* End btn__light-solid*/
 

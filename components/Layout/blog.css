@@ -18,7 +18,6 @@
     width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
     height: 100%; /* Garante que o contêiner ocupe toda a altura disponível */
     padding: 1em; /* Adiciona espaçamento interno, se necessário */
-    box-sizing: border-box; /* Inclui padding e bordas no tamanho total */
 }
 
 
