@@ -63,8 +63,3 @@ header.scrolled {
     padding: 0.5em 1em;
     font-size: 14px;
 }
-
-.dark__mode-item {
-    font-size: 30px; 
-    cursor: pointer; 
-}

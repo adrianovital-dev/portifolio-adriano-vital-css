@@ -1,28 +1,18 @@
-.skills__content {
+.sk__content{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    gap: 2em;
-    margin: 0 3em;
+    grid-template-columns: 0.50fr 0.50fr;
+    gap: 4em;
 }
 
-.skills_interpersonal,
-.skills__tecnology {
-    width: 100%; 
-    margin: 2.5em 0;
+.sk__column-left{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 4em;
 }
 
 
-
-.skills_interpersonal ul {
-    list-style: disc;
-    padding: 0 3em;
-    
-}
-
-.skills_interpersonal li {
-    display: list-item;
-}
 
 .skills_interpersonal-title,
 .skills__tecnology-title{
@@ -37,12 +27,7 @@
     font-weight: 400;
 }
 
-.skills__interpersonal-list{
-    margin: 1em 0;
-}
-.skills__interpersonal-item{
-    margin: 0.50em 0;
-}
+
 
 .skills__btn-title{
     margin-top: 5em;
