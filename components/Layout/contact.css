@@ -27,8 +27,8 @@
 
 .contact__social-item:hover{
     color: var(--blue);
-    border: 1px solid var(--blue-light);
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    transform: translateY(-4px) scale(1.05);
 }
 
 .contact__text{

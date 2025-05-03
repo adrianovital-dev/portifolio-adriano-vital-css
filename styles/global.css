@@ -5,8 +5,8 @@
 @import url(/components/Layout/banner.css);
 @import url(/components/Layout/service.css);
 @import url(/components/Layout/skills.css);
-@import url(/components/Layout/budget.css);
 @import url(/components/Layout/projects.css);
+@import url(/components/Layout/steps.css);
 @import url(/components/Layout/testimonials.css);
 @import url(/components/Layout/blog.css);
 @import url(/components/Layout/faq.css);
@@ -74,6 +74,12 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
 
 h4 {
     font-size: 18px;
@@ -82,4 +88,10 @@ h4 {
     text-align: center;
     margin-top: 0.5em;
     margin-bottom: 1em;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--gray-dark);
 }

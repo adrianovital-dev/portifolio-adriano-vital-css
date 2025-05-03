@@ -67,14 +67,14 @@
 .banner__btn-social-item {
     color: var(--gray-medium);
     font-size: 20px;
-    margin: .3em;
+    margin: .1em;
     text-align: center;
 }
 
 .banner__btn-social-item:hover {
     color: var(--blue);
+    transform: translateY(-4px) scale(1.05);
     transition: 0.3s;
-    font-size: 22px;
 }
 
 .banner__tecnologies{
