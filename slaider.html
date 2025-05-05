@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slider de Cartas Empilhadas</title>
+  <!-- Swiper CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+  <style>
+    body {
+      background-color: #0f0f0f;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .swiper {
+      width: 320px;
+      height: 500px;
+    }
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      position: relative;
+    }
+
+    .slide-content {
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent 60%);
+      padding: 20px;
+      color: #fff;
+      z-index: 1;
+    }
+
+    .slide-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .slide-description {
+      font-size: 13px;
+      color: #ccc;
+      margin-bottom: 14px;
+    }
+
+    .slide-button {
+      background: #fff;
+      color: #111;
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: bold;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .slide-button:hover {
+      transform: translateX(4px);
+      background: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div
+        class="swiper-slide"
+        style="background-image: url('/assets/project/1.png')"
+      >
+        <div class="slide-content">
+          <div class="slide-title">Projeto 1</div>
+          <div class="slide-description">
+            Site institucional com layout moderno e responsivo.
+          </div>
+          <button class="slide-button">
+            Explorar projeto <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div
+        class="swiper-slide"
+        style="background-image: url('/assets/project/2.png')"
+      >
+        <div class="slide-content">
+          <div class="slide-title">Projeto 2</div>
+          <div class="slide-description">
+            Animações interativas e layout fluido em uma landing criativa.
+          </div>
+          <button class="slide-button">
+            Explorar projeto <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div
+        class="swiper-slide"
+        style="background-image: url('/assets/project/3.png')"
+      >
+        <div class="slide-content">
+          <div class="slide-title">Projeto 3</div>
+          <div class="slide-description">
+            Dashboard com gráficos dinâmicos e tema escuro.
+          </div>
+          <button class="slide-button">
+            Explorar projeto <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div
+        class="swiper-slide"
+        style="background-image: url('/assets/project/4.png')"
+      >
+        <div class="slide-content">
+          <div class="slide-title">Projeto 4</div>
+          <div class="slide-description">
+            Portfólio moderno com animações suaves e carregamento otimizado.
+          </div>
+          <button class="slide-button">
+            Explorar projeto <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- Font Awesome -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <!-- Initialize Swiper -->
+  <script>
+    const swiper = new Swiper('.swiper', {
+      effect: 'cards',
+      grabCursor: true,
+    });
+  </script>
+</body>
+</html>

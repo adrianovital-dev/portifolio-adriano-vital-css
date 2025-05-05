@@ -47,7 +47,6 @@
     padding: 30px;
     background: var(--white);
     border-radius: 12px;
-    box-shadow: 0 4px 20px var(--gray-lighter);
 }
 
 .form-contato {

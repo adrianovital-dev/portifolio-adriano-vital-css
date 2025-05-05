@@ -56,14 +56,15 @@ body {
 .container {
     height: 90vh;
     max-height: 100%;
+    max-width: 100vw;
     border: #818181 1px solid;
-    padding: 3em 6em;
+    padding: 3rem 5rem;
 }
 
 h1 {
     font-size: 25px;
     color: var(--black);
-    text-align: center;
+    text-align: left;
 
 }
 
@@ -71,12 +72,14 @@ h2 {
     font-size: 40px;
     font-weight: 700;
     color: var(--blue);
-    text-align: center;
+    text-align: left;
 }
 
 h3 {
     font-size: 20px;
     font-weight: 600;
+    text-align: left;
+
 }
 
 
@@ -85,7 +88,7 @@ h4 {
     font-size: 18px;
     font-weight: 500;
     color: var(--black);
-    text-align: center;
+    text-align: left;
     margin-top: 0.5em;
     margin-bottom: 1em;
 }
@@ -94,4 +97,5 @@ h5 {
     font-size: 16px;
     font-weight: 500;
     color: var(--gray-dark);
+    text-align: left;
 }

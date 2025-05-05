@@ -84,21 +84,33 @@
 
             </div>
         </div>
-        <div class="banner__tecnologies">
-            <p class="banner_tecnologies-text">Front-End Developer</p>
-            <img src="/assets/img/others/Logotipo AdrianoVital.dev Transparente.png" alt=""
-                class="banner__tecnologies-log">
-            <p class="banner_tecnologies-text">WEB Designer</p>
-            <img src="/assets/img/others/Logotipo AdrianoVital.dev Transparente.png" alt=""
-                class="banner__tecnologies-log">
-            <p class="banner_tecnologies-text">Graphic Designer</p>
-            <img src="/assets/img/others/Logotipo AdrianoVital.dev Transparente.png" alt=""
-                class="banner__tecnologies-log">
-            <p class="banner_tecnologies-text">Social Media</p>
-            <img src="/assets/img/others/Logotipo AdrianoVital.dev Transparente.png" alt=""
-                class="banner__tecnologies-log">
-            <p class="banner_tecnologies-text">Front-End Developer</p>
+
+        <div class="banner__stripes">
+            <div class="stripe stripe--gray"></div>
+            <div class="stripe stripe--blue">
+                <span class="stripe__text">
+                    Front-End Developer
+                    <i class="fa-solid fa-code service_card-icon"></i>
+                    WEB Designer
+                    <i class="fa-solid fa-desktop service_card-icon"></i>
+                    Graphic Designer
+                    <i class="fa-solid fa-bezier-curve service_card-icon"></i>
+                    Social Media
+                    <i class="fa-regular fa-thumbs-up service_card-icon"></i>
+                    Front-End Developer
+                    <i class="fa-solid fa-code service_card-icon"></i>
+                    WEB Designer
+                    <i class="fa-solid fa-desktop service_card-icon"></i>
+                    Graphic Designer
+                    <i class="fa-solid fa-bezier-curve service_card-icon"></i>
+                    Social Media
+                    <i class="fa-regular fa-thumbs-up service_card-icon"></i>
+                </span>
+            </div>
         </div>
+
+
+
     </section>
 
     <section class="service container">
@@ -140,7 +152,7 @@
             <div class="service__card">
                 <div class="service__card-titles">
                     <h4 class="service__cards-title">Graphic Designer</h3>
-                        <i class="fa-solid fa-pen-nib service_card-icon"></i>
+                        <i class="fa-solid fa-bezier-curve service_card-icon"></i>
                 </div>
                 <ul class="service__cards-list">
                     <li><i class="fa-solid fa-check service__cards-icon"></i> Logotipo/Identidade Visual</li>
@@ -298,111 +310,128 @@
 
             <div class="custom-modal" id="modal-download">
                 <div class="custom-modal-content">
-                  <span class="custom-modal-close">&times;</span>
-                  <h2>Choose the resume language</h2>
-                  <div class="modal-block modal-download-buttons">
-                    <button class="btn__defaut-solid" onclick="downloadCV('en')">English Version</button>
-                    <button class="btn__defaut-solid" onclick="downloadCV('pt')">Portuguese Version</button>
-                  </div>
-                  
+                    <span class="custom-modal-close">&times;</span>
+                    <h2>Choose the resume language</h2>
+                    <div class="modal-block modal-download-buttons">
+                        <button class="btn__defaut-solid" onclick="downloadCV('en')">English Version</button>
+                        <button class="btn__defaut-solid" onclick="downloadCV('pt')">Portuguese Version</button>
+                    </div>
+
                 </div>
-              </div>
+            </div>
 
     </section>
 
-    <section class="projects container">
+
+    <section class="projects_galeria container">
         <h1>projects.</h1>
         <h2>Digital Product showcases</h2>
         <h4>Fortalecendo sua marca com soluções digitais e criativas</h4>
+        <div class="projects__content">
+            <div class="masonry-grid">
+                <!-- Seus projetos com overlay -->
+                <div class="project-item"><img src="/assets/blog/23.webp" alt="Project 1">
+                    <div class="overlay">
+                        <h3 class="project__title">Project 1</h3>
+                        <p class="projects__description">WEB Designer</p>
+                        <a class="btn__light-solid" href="#">View More</a>
+                    </div>
+                </div>
 
-        <div class="masonry-grid">
-            <!-- Column 1 -->
-            <div class="project-item" style="animation-delay: 0s"><img src="/assets/blog/23.webp" alt="Project 1">
-                <div class="overlay">
-                    <h3 class="project__title">Project 1</h3>
-                    <p class="projects__description">WEB Designer</p><a class="btn__light-solid"" href=" #">View
-                        More</a>
+                <div class="project-item"><img src="/assets/project/1.png" alt="Project 2">
+                    <div class="overlay">
+                        <h3 class="project__title">Project 2</h3>
+                        <p class="projects__description">WEB Designer</p>
+                        <a class="btn__light-solid" href="#">View More</a>
+                    </div>
                 </div>
-            </div>
-            <div class="project-item" style="animation-delay: 0.1s"><img src="/assets/project/1.png" alt="Project 2">
-                <div class="overlay">
-                    <h3 class="project__title">Project 2</h3>
-                    <p class="projects__description">WEB Designer</p><a class="btn__light-solid" href="#">View More</a>
+
+                <div class="project-item"><img src="/assets/project/1.png" alt="Project 3">
+                    <div class="overlay">
+                        <h3 class="project__title">Project 3</h3>
+                        <p class="projects__description">WEB Designer</p>
+                        <a class="btn__light-solid" href="#">View More</a>
+                    </div>
                 </div>
-            </div>
-            <!-- Column 2 -->
-            <div class="project-item" style="animation-delay: 0.2s"><img src="/assets/project/2.png" alt="Project 3">
-                <div class="overlay">
-                    <h3 class="project__title">Project 3</h3>
-                    <p class="projects__description">WEB Designer</p><a class="btn__light-solid" href="#">View More</a>
+
+                <div class="project-item"><img src="/assets/blog/23.webp" alt="Project 4">
+                    <div class="overlay">
+                        <h3 class="project__title">Project 4</h3>
+                        <p class="projects__description">WEB Designer</p>
+                        <a class="btn__light-solid" href="#">View More</a>
+                    </div>
                 </div>
-            </div>
-            <div class="project-item" style="animation-delay: 0.3s"><img src="/assets/blog/29.webp" alt="Project 4">
-                <div class="overlay">
-                    <h3 class="project__title">Project 4</h3>
-                    <p class="projects__description">WEB Designer</p><a class="btn__light-solid" href="#">View More</a>
+
+                <div class="project-item"><img src="/assets/blog/33.webp" alt="Project 5">
+                    <div class="overlay">
+                        <h3 class="project__title">Project 5</h3>
+                        <p class="projects__description">WEB Designer</p>
+                        <a class="btn__light-solid" href="#">View More</a>
+                    </div>
                 </div>
-            </div>
-            <!-- Column 3 -->
-            <div class="project-item" style="animation-delay: 0.4s"><img src="/assets/blog/33.webp" alt="Project 5">
-                <div class="overlay">
-                    <h3 class="project__title">Project 5</h3>
-                    <p class="projects__description">WEB Designer</p><a class="btn__light-solid" href="#">View More</a>
+
+                <div class="project-item"><img src="/assets/project/1.png" alt="Project 6">
+                    <div class="overlay">
+                        <h3 class="project__title">Project 6</h3>
+                        <p class="projects__description">WEB Designer</p>
+                        <a class="btn__light-solid" href="#">View More</a>
+                    </div>
                 </div>
-            </div>
-            <div class="project-item" style="animation-delay: 0.5s"><img src="/assets/project/3.png" alt="Project 6">
-                <div class="overlay">
-                    <h3 class="project__title">Project 6</h3>
-                    <p class="projects__description">WEB Designer</p><a class="btn__light-solid" href="#">View More</a>
+
+                <div class="project-item"><img src="/assets/project/1.png" alt="Project 7">
+                    <div class="overlay">
+                        <h3 class="project__title">Project 7</h3>
+                        <p class="projects__description">WEB Designer</p>
+                        <a class="btn__light-solid" href="#">View More</a>
+                    </div>
                 </div>
-            </div>
-            <!-- Column 4 -->
-            <div class="project-item" style="animation-delay: 0.6s"><img src="/assets/project/4.png" alt="Project 7">
-                <div class="overlay">
-                    <h3 class="project__title">Project 7</h3>
-                    <p class="projects__description">WEB Designer</p><a class="btn__light-solid" href="#">View More</a>
+
+                <div class="project-item"><img src="/assets/blog/42.webp" alt="Project 8">
+                    <div class="overlay">
+                        <h3 class="project__title">Project 8</h3>
+                        <p class="projects__description">WEB Designer</p>
+                        <a class="btn__light-solid" href="#">View More</a>
+                    </div>
                 </div>
-            </div>
-            <div class="project-item" style="animation-delay: 0.7s"><img src="/assets/blog/34.webp" alt="Project 8">
-                <div class="overlay">
-                    <h3 class="project__title">Project 8</h3>
-                    <p class="projects__description">WEB Designer</p><a class="btn__light-solid" href="#">View More</a>
+                <div class="project-item"><img src="/assets/blog/33.webp" alt="Project 8">
+                    <div class="overlay">
+                        <h3 class="project__title">Project 9</h3>
+                        <p class="projects__description">WEB Designer</p>
+                        <a class="btn__light-solid" href="#">View More</a>
+                    </div>
                 </div>
-            </div>
-            <!-- Column 5 -->
-            <div class="project-item" style="animation-delay: 0.8s"><img src="/assets/blog/40.webp" alt="Project 9">
-                <div class="overlay">
-                    <h3 class="project__title">Project 9</h3>
-                    <p class="projects__description">WEB Designer</p><a class="btn__light-solid" href="#">View More</a>
+                <div class="project-item"><img src="/assets/project/4.png" alt="Project 7">
+                    <div class="overlay">
+                        <h3 class="project__title">Project 10</h3>
+                        <p class="projects__description">WEB Designer</p>
+                        <a class="btn__light-solid" href="#">View More</a>
+                    </div>
                 </div>
-            </div>
-            <div class="project-item" style="animation-delay: 0.9s"><img src="/assets/project/5.png" alt="Project 10">
-                <div class="overlay">
-                    <h3 class="project__title">Project 10</h3>
-                    <p class="projects__description">WEB Designer</p><a class="btn__light-solid" href="#">View More</a>
+                <div class="project-item"><img src="/assets/project/4.png" alt="Project 8">
+                    <div class="overlay">
+                        <h3 class="project__title">Project 11</h3>
+                        <p class="projects__description">WEB Designer</p>
+                        <a class="btn__light-solid" href="#">View More</a>
+                    </div>
                 </div>
-            </div>
-            <!-- Column 6 -->
-            <div class="project-item" style="animation-delay: 0.10s"><img src="/assets/project/6.png" alt="Project 11">
-                <div class="overlay">
-                    <h3 class="project__title">Project 11</h3>
-                    <p class="projects__description">WEB Designer</p><a class="btn__light-solid" href="#">View More</a>
-                </div>
-            </div>
-            <div class="project-item" style="animation-delay: 0.11s"><img src="/assets/blog/42.webp" alt="Project 12">
-                <div class="overlay">
-                    <h3 class="project__title">Project 12</h3>
-                    <p class="projects__description">WEB Designer</p><a class="btn__light-solid" href="#">View More</a>
+                <div class="project-item"><img src="/assets/blog/33.webp" alt="Project 7">
+                    <div class="overlay">
+                        <h3 class="project__title">Project 12</h3>
+                        <p class="projects__description">WEB Designer</p>
+                        <a class="btn__light-solid" href="#">View More</a>
+                    </div>
                 </div>
             </div>
 
-        </div>
 
-        <div class="projects__btn">
-            <a href="#" class="btn__defaut-solid"><i class="fa-brands fa-whatsapp btn__defaut-icon"></i>Iniciar um
-                projeto</a>
-            <a href="#" class="btn__defaut-outline"><i class="fa-solid fa-plus btn__defaut-outline-icon"></i>Ver todos
-                projetos </a>
+            <div class="projects__btn">
+                <a href="#" class="btn__defaut-solid">
+                    <i class="fa-brands fa-whatsapp btn__defaut-icon"></i>Iniciar um projeto
+                </a>
+                <a href="#" class="btn__defaut-outline">
+                    <i class="fa-solid fa-plus btn__defaut-outline-icon"></i>Ver todos projetos
+                </a>
+            </div>
         </div>
     </section>
 
