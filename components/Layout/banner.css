@@ -37,18 +37,6 @@
 
 }
 
-.banner__description-name,
-.banner__description-job,
-.banner__description-greetings {
-    font-weight: 700;
-    font-size: 40px;
-    margin: 0.3em 0;
-    text-align: left;
-}
-
-.banner__description-name {
-    color: var(--blue);
-}
 
 
 .banner__description-text {

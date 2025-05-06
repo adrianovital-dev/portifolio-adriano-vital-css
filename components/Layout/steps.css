@@ -4,7 +4,7 @@
 
 .steps__left-column {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     margin: 0 4em;
@@ -46,16 +46,9 @@
 
 .step__text{
     text-align: justify;
-    color: var(--gray-dark);
-}
-
-.step-title{
-    text-align:left;
-    margin: 0.5em 0;
 }
 
 .steps__text{
     color: var(--gray-dark);
-    text-align: center;
     margin: 2em 0;
 }

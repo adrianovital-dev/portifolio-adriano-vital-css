@@ -94,3 +94,14 @@
 }
 /* End btn__light-solid*/
 
+/* Start btn__tertiary */
+
+.btn__tertiary{
+    color: var(--blue);
+    display: inline-block;
+    margin: 0.5em 0;
+    font-size: 16px;
+}
+
+/* End btn__tertiary  */
+

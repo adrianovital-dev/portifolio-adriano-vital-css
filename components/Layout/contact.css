@@ -4,13 +4,12 @@
   margin: 4em 2em;
 }
 
-.contact__content{
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 5em 0 2em 0;
+.contact__content-phone,
+.contact__content-email,
+.contact__container{
+  margin: 2em 0;
 }
+
 
 .contact__title {
     font-weight: 600;
@@ -20,7 +19,7 @@
 
 .contact__social-item {
     text-align: left;
-    font-size: 25px;
+    font-size: 22px;
     color: var(--gray-medium);
     margin: 0.3em 0.3em;
 }
@@ -32,10 +31,10 @@
 }
 
 .contact__text{
-    margin: 4em 0;
-    text-align: center;
-    font-size: 14px;
-    color: var(--gray-medium);
+    margin: 2em 0;
+    font-size: 16px;
+    color: var(--gray);
+    width: 75%;
 }
 
 /* Right columns / Forms */

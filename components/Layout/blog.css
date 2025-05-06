@@ -26,22 +26,10 @@
 
 
 .blog__card-title {  
-    font-size: 17px;
-    font-weight: 600;
     color: var(--blue);
     margin: 0.5em 0;
 }
 
-
-.blog__link {
-    color: var(--blue);
-    font-size: 14px;
-
-}
-
-
-.blog__btn {
-    text-align: center;
-    margin: 2em 0;
-
+.blog__card-description{
+    text-align: justify;
 }
