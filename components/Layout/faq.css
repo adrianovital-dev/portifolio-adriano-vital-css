@@ -9,8 +9,8 @@
   }  
   
   .faq-item {
-    border-bottom: 1px solid #ccc;
-    padding: 1rem 0;
+    border-bottom: 1px solid var(--gray-lighter);
+    padding: 0.2rem 0;
   }
   
   .faq-question {
@@ -27,7 +27,8 @@
   }
   
   .faq-toggle-icon {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    color: var(--gray-light);
     transition: transform 0.3s ease;
   }
   
@@ -36,7 +37,7 @@
     overflow: hidden;
     opacity: 0;
     transition: all 0.3s ease;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
   }
 
   .faq-answe-tex{
@@ -46,7 +47,7 @@
   .faq-item.active .faq-answer {
     max-height: 200px; /* valor suficiente para a resposta */
     opacity: 1;
-    margin-top: 0.5rem;
+    
   }
   
   .faq-item.active .faq-toggle-icon {

@@ -1,37 +1,23 @@
 .skills{
     background-color: var(--gray-extra-light);
 }
-.skills__column-left{
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    justify-content: center;
-    margin: 0 4em;
+
+.skills__content{
+  gap: 5em;
 }
-
-
-.skills__tecnology-title{
-    margin: 1em 0;
-}
-
-.skills__title-item{
-    margin: 1.3em 0;
-}
-
-
 
 .skill__tecnology-item{
     display: flex;
     flex-wrap: wrap;
     gap: 0.7em;
+    margin: 1em 0;
 }
-
 
 
 .skill__tecnology-item li {
     display: flex;
     flex-direction: column; /* Alinha o conteúdo verticalmente */
-    height: 85px;
+    height: 90px;
     width: 100px; /* Largura fixa para os itens */
     align-items: center; /* Centraliza o ícone e o texto */
     justify-content: center; /* Centraliza verticalmente */
@@ -48,7 +34,7 @@
 
 
 .skill__tecnology-item li i {
-    margin-bottom: 0.2em;
+    margin-bottom: 0.3em;
     color: var(--gray); /* Cor do ícone */
     font-size: 35px;
 
@@ -63,109 +49,4 @@
     margin-top: 2em;
     border-top: 1px solid var(--gray-lighter);
     padding-top: 1.5em;
-}
-
-
-/* MODAL BASE */
-.modal {
-    display: none; /* Escondido por padrão */
-    position: fixed; /* Fixa na tela */
-    z-index: 1000; /* Sobre outros elementos */
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%;
-    overflow: auto; /* Permite scroll se necessário */
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo escurecido */
-  }
-  
-  /* CONTEÚDO DO MODAL */
-  .custom-modal {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-    background-color: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(4px);
-    animation: fadeIn 0.3s ease-in-out;
-  }
-
-  .custom-modal-content {
-    background-color: white;
-    margin: 5% auto;
-    padding: 2em;
-    border-radius: 16px;
-    max-width: 700px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    animation: slideIn 0.4s ease-in-out;
-  }
-
-  .custom-modal-close {
-    float: right;
-    font-size: 45px;
-    cursor: pointer;
-    color: var(--gray-dark);
-  }
-
-  .modal-block {
-    margin: 2em 0;
-  }
-
-  .modal-download-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-  }
-
-  .date{
-    margin: 0.5em 0;
-  }
-
-  .modal-block h3 {
-    font-weight: 600;
-    margin: 0.3em 0;
-  }
-
-  .modal-block p.date {
-    font-size: 14px;
-    font-style: italic;
-    color: var(--gray);
-  }
-
-  @keyframes slideIn {
-    from { transform: translateY(30px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-  }
-
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-
-  @media (max-width: 600px) {
-    .skill__tecnology-item li {
-        width: 80px;
-        height: 75px;
-        font-size: 11px;
-    }
-
-
-    .skill__tecnology-item li i {
-        font-size: 25px;
-    }
-
-    .modal-block .btn__defaut-solid {
-        width: 80%; /* Opcional: deixa os botões mais largos no mobile */
-        margin-bottom: 0.5em;
-      }
-
-      .modal-block {
-        flex-direction: column;
-        align-items: center;
-      }
 }
