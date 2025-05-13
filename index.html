@@ -24,15 +24,17 @@
     <header>
         <nav class="nav">
             <div class="nav__logo">
-                <img src="/assets/img/others/Logo AdrianoVital.dev Transparente.png" alt="" class="nav__brand">
+                <a href="index.html">
+                    <img src="/assets/img/others/Logo AdrianoVital.dev Transparente.png" alt="Logo AdrianoVital.dev"
+                        class="nav__brand">
+                </a>
             </div>
             <ul class="nav__menu">
-                <li><a href="index.html" class="nav__menu-item">HOME</a></li>
-                <li><a href="banner.html" class="nav__menu-item">SERVICE</a></li>
-                <li><a href="project.html" class="nav__menu-item">SKILL</a></li>
-                <li><a href="project.html" class="nav__menu-item">PROJECT</a></li>
-                <li><a href="contact.html" class="nav__menu-item">BLOG</a></li>
-                <li><a href="contact.html" class="nav__menu-item">CONTACT</a></li>
+                <li><a href="#home" class="nav__menu-item">HOME</a></li>
+                <li><a href="#service" class="nav__menu-item">SERVICE</a></li>
+                <li><a href="#skill" class="nav__menu-item">SKILL</a></li>
+                <li><a href="#project" class="nav__menu-item">PROJECT</a></li>
+                <li><a href="#contact" class="nav__menu-item">CONTACT</a></li>
             </ul>
 
             <div class="nav__btn">
@@ -42,7 +44,7 @@
         </nav>
     </header>
 
-    <section class="banner">
+    <section id="home" class="banner">
         <div class="banner__content">
             <div class="banner__imag">
                 <img src="/assets/img/others/foto perfil.png" alt="" class="banner__imag-perfil">
@@ -51,17 +53,13 @@
                 <h1>Hi, I'm</h1>
                 <h2>Adriano Vital</h2>
                 <h5>a Front-end developer</h5>
-                <p class="banner__description-text">Sou apaixonado por criar experiências digitais impactantes que vão
-                    além
-                    do design. Desenvolvo soluções estratégicas que fortalecem marcas, aumentam conversões e geram
-                    resultados reais. Cada projeto é pensado para oferecer não apenas um visual atraente, mas também
-                    desempenho, acessibilidade e uma experiência fluida para o usuário.</p>
-                <p class="banner__description-text">Minha missão é transformar ideias em produtos digitais inovadores
-                    que
-                    impulsionam negócios. Se você busca um profissional comprometido em criar um aplicações web que
-                    destaque
-                    sua marca e gere crescimento, vamos conversar. Estou pronto para desenvolver a solução que você
-                    precisa.
+                <p class="banner__description-text">I’m passionate about creating impactful digital experiences that go
+                    beyond design. I develop strategic solutions that strengthen brands, increase conversions, and
+                    deliver real results. Every project is crafted not only to look great, but also to ensure
+                    performance, accessibility, and a seamless user experience.</p>
+                <p class="banner__description-text">My mission is to turn ideas into innovative digital products that
+                    drive business growth. If you’re looking for a dedicated professional to create a web application
+                    that highlights your brand and fosters growth, let’s talk. I’m ready to build the solution you need.
                 </p>
 
                 <div class="banner__btn">
@@ -113,7 +111,7 @@
 
     </section>
 
-    <section class="service container">
+    <section id="service" class="service container">
         <span class="title-center">
             <h1>Service.</h1>
             <h2>Expertise Service! Let's check it out</h2>
@@ -128,27 +126,29 @@
                     <i class="fa-solid fa-code service_card-icon"></i>
                 </div>
                 <ul class="service__cards-list">
-                    <li><i class="fa-solid fa-check service__cards-icon"></i> Creating intuitive and visually
-                        stunning designs to elevate the user experience</li>
+                    <li><i class="fa-solid fa-check service__cards-icon"></i> Creating visually engaging and intuitive
+                        web experiences focused on performance and usability.</li>
                 </ul>
                 <a href="#" class="btn__defaut-solid service__btn"><i
-                        class="fa-brands fa-whatsapp btn__defaut-icon"></i>Iniciar um projeto</a>
+                        class="fa-brands fa-whatsapp btn__defaut-icon"></i>Start a project</a>
             </div>
 
             <div class="service__card">
                 <div class="service__card-titles">
-                    <h3 class="service__cards-title">WEB Designer</h3>
+                    <h3 class="service__cards-title">Web Design</h3>
                     <i class="fa-solid fa-desktop service_card-icon"></i>
                 </div>
                 <ul class="service__cards-list">
-                    <li><i class="fa-solid fa-check service__cards-icon"></i> Site Institucional</li>
-                    <li><i class="fa-solid fa-check service__cards-icon"></i> Landing Pages, one page</li>
-                    <li><i class="fa-solid fa-check service__cards-icon"></i> Sites de Links</li>
-                    <li><i class="fa-solid fa-check service__cards-icon"></i> E-commerce</li>
-                    <li><i class="fa-solid fa-check service__cards-icon"></i> Blogs, Portais e Copywriter</li>
+                    <li><i class="fa-solid fa-check service__cards-icon"></i>Brochure Websites</li>
+                    <li><i class="fa-solid fa-check service__cards-icon"></i>Landing Pages, one page</li>
+                    <li><i class="fa-solid fa-check service__cards-icon"></i>Link-in-Bio Pages</li>
+                    <li><i class="fa-solid fa-check service__cards-icon"></i>E-commerce Websites</li>
+                    <li><i class="fa-solid fa-check service__cards-icon"></i>Blogs, Content Platforms</li>
+                    <li><i class="fa-solid fa-check service__cards-icon"></i>Web Copywriting</li>
+
                 </ul>
                 <a href="#" class="btn__defaut-solid service__btn"><i
-                        class="fa-brands fa-whatsapp btn__defaut-icon"></i>Iniciar um projeto</a>
+                        class="fa-brands fa-whatsapp btn__defaut-icon"></i>Start a project</a>
             </div>
 
             <div class="service__card">
@@ -157,41 +157,39 @@
                     <i class="fa-solid fa-bezier-curve service_card-icon"></i>
                 </div>
                 <ul class="service__cards-list">
-                    <li><i class="fa-solid fa-check service__cards-icon"></i> Logotipo/Identidade Visual</li>
-                    <li><i class="fa-solid fa-check service__cards-icon"></i> Cartões de visita e papelaria</li>
-                    <li><i class="fa-solid fa-check service__cards-icon"></i> Flyers, panfletos, catálogos, banners
-                        e etc.</li>
+                    <li><i class="fa-solid fa-check service__cards-icon"></i> Logo Design & Visual Identity</li>
+                    <li><i class="fa-solid fa-check service__cards-icon"></i> Business Cards & Stationery Design</li>
+                    <li><i class="fa-solid fa-check service__cards-icon"></i> Flyers, Leaflets, Catalogues, Banners</li>
                 </ul>
                 <a href="#" class="btn__defaut-solid service__btn"><i
-                        class="fa-brands fa-whatsapp btn__defaut-icon"></i>Iniciar um projeto</a>
+                        class="fa-brands fa-whatsapp btn__defaut-icon"></i>Start a project</a>
             </div>
 
             <div class="service__card">
                 <div class="service__card-titles">
-                    <h3 class="service__cards-title">Social Média</h3>
+                    <h3 class="service__cards-title">Digital Marketing</h3>
                     <i class="fa-regular fa-thumbs-up service_card-icon"></i>
                 </div>
                 <ul class="service__cards-list">
-                    <li><i class="fa-solid fa-check service__cards-icon"></i> Gestão de mídias</li>
-                    <li><i class="fa-solid fa-check service__cards-icon"></i> Criativos para redes sociais</li>
-                    <li><i class="fa-solid fa-check service__cards-icon"></i> Sites de Links</li>
-                    <li><i class="fa-solid fa-check service__cards-icon"></i> Facebook/Instagram Ads</li>
-                    <li><i class="fa-solid fa-check service__cards-icon"></i> Copywriter</li>
+                    <li><i class="fa-solid fa-check service__cards-icon"></i>Social Media Management</li>
+                    <li><i class="fa-solid fa-check service__cards-icon"></i>Social Media Creatives</li>
+                    <li><i class="fa-solid fa-check service__cards-icon"></i>Link-in-Bio Pages</li>
+                    <li><i class="fa-solid fa-check service__cards-icon"></i>Facebook & Instagram Advertising</li>
+                    <li><i class="fa-solid fa-check service__cards-icon"></i>Copywriting</li>
                 </ul>
                 <a href="#" class="btn__defaut-solid service__btn"><i
-                        class="fa-brands fa-whatsapp btn__defaut-icon"></i>Iniciar um projeto</a>
+                        class="fa-brands fa-whatsapp btn__defaut-icon"></i>Start a project</a>
             </div>
         </div>
     </section>
 
-    <section class="skills container">
+    <section id="skill" class="skills container">
         <div class="skills__content columns-50-50">
             <div class="left-column">
                 <h1>Software Skills.</h1>
                 <h2>Expertise Service! Let's check it out</h2>
-                <h5>Espero que possamos trabalhar juntos, e trazer soluções úteis seja para sua empresa, comercio, marca
-                    ou
-                    pessoa.</h5>
+                <h5>I hope we can work together and bring useful solutions, whether for your business, store, brand, or
+                    individual.</h5>
             </div>
             <!-- Skills -->
             <div class="right-column">
@@ -325,11 +323,11 @@
     </section>
 
 
-    <section class="projects_galeria ">
+    <section id="project" class="projects ">
         <span class="projects__title title-center">
             <h1 class="">projects.</h1>
             <h2 class="">Digital Product showcases</h2>
-            <h5 class="">Fortalecendo sua marca com soluções digitais e criativas</h5>
+            <h5 class="">Strengthening your brand with digital and creative solutions</h5>
         </span>
 
         <div class="projects__content container">
@@ -542,57 +540,54 @@
     <section class="steps container">
         <div class="columns-50-50">
             <div class="left-column">
-                <h1>Seu site pronto em</h1>
-                <h2>5 etapas simples.</h2>
+                <h1>Your website ready in</h1>
+                <h2>5 simple steps.</h2>
                 <h5>My Working Process</h5>
-                <h6 class="steps__text">Dê credibilidade à sua empresa, multiplique a potência do seu negócio com um
-                    website que transmite o
-                    valor do seu produto, focado em resultados!</h6>
-                <a href="#" class="btn__defaut-solid"><i class="fa-brands fa-whatsapp btn__defaut-icon"></i>Fazer um
-                    orçamento</a>
+                <h6 class="steps__text">Give credibility to your business and amplify its potential with a website that
+                    communicates the value of your product, focused on results!"</h6>
+                <a href="#" class="btn__defaut-solid"><i class="fa-brands fa-whatsapp btn__defaut-icon"></i>Get a
+                    quote</a>
             </div>
             <div class="right-column">
                 <div class="step">
                     <p class="step-number">1</p>
                     <div class="step__description">
-                        <h5 class="step-title">Briefing Detalhado</h5>
-                        <p class="step__text">Coleta de informações sobre o propósito do site, público-alvo,
-                            funcionalidades desejadas e referências visuais.</p>
+                        <h5 class="step-title">Detailed Briefing</h5>
+                        <p class="step__text">Gathering information about the purpose of the website, target audience,
+                            desired features, and visual references.</p>
                     </div>
                 </div>
                 <div class="step">
                     <p class="step-number">2</p>
                     <div class="step__description">
-                        <h5 class="step-title">Planejamento e Extrutura</h5>
-                        <p class="step__text">Estruturação do projeto, definição do mapa do site, wireframes e
-                            tecnologias a serem usadas.</p>
+                        <h5 class="step-title">Planning and Structuring</h5>
+                        <p class="step__text">Developing the project structure, defining the site map, wireframes, and
+                            selecting the technologies to be used.</p>
                     </div>
                 </div>
                 <div class="step">
                     <p class="step-number">3</p>
                     <div class="step__description">
-                        <h5 class="step-title">Design Personalizado</h5>
-                        <p class="step__text">Criação do layout visual, escolha de cores, tipografia e identidade
-                            visual
-                            do site.</p>
+                        <h5 class="step-title">Custom Design</h5>
+                        <p class="step__text">Creating the visual layout, selecting colours, typography, and the
+                            website's visual identity.</p>
                     </div>
                 </div>
                 <div class="step">
                     <p class="step-number">4</p>
                     <div class="step__description">
-                        <h5 class="step-title">Desenvolvimento e Testes</h5>
-                        <p class="step__text">Conversão do design em código. Verificação de usabilidade, responsividade,
-                            compatibilidade entre navegadores e correção de bugs. Hospedagem do site, configuração de
-                            domínio e ajustes finais antes do lançamento.</p>
+                        <h5 class="step-title">Development and Testing</h5>
+                        <p class="step__text">Converting the design into code, ensuring usability, responsiveness,
+                            cross-browser compatibility, and fixing bugs. Setting up the server, domain, and making
+                            final adjustments before launch.</p>
                     </div>
                 </div>
                 <div class="step">
                     <p class="step-number">5</p>
                     <div class="step__description">
-                        <h5 class="step-title">Otimização Detalhado</h5>
-                        <p class="step__text">Após a entrega, otimizamos o site para garantir máxima performance,
-                            carregamento rápido e segurança, oferecendo também assistência técnica contínua, e
-                            manutenção.</p>
+                        <h5 class="step-title">Optimisation and Maintenance</h5>
+                        <p class="step__text">AAfter launch, we optimise the website to ensure maximum performance, fast
+                            loading, and security, also offering continuous support and maintenance services.</p>
                     </div>
                 </div>
 
@@ -601,124 +596,126 @@
     </section>
 
 
-    <section class="faqs container">
+    <section class="faqs ">
         <div class="columns-50-50">
             <div class="left-column">
                 <h1>-FAQS</h1>
                 <h2>Any Questions?</h2>
                 <h5>The answer may already be here!</h5>
-                <h6 class="faq-space">Se ainda restar alguma questão, é só entrar em contato — vou ter o maior prazer
-                    em
-                    ajudar.</h6>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <h5>Qual o prazo para o site ser entregue?</h5>
-                        <span class="faq-toggle-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p class="faq-answe-tex">O prazo de cada projeto varia de acordo com o tamanho e complexidade do
-                            site. Em média os
-                            sites tendem a ser totalmente desenvolvidos em torno de 21 dias úteis, porém pode ser em
-                            menos tempo ou em mais tempo, dependendo também da cooperação do cliente (envio do briefing,
-                            envio dos materiais necessários como fotos, referências, se não tiver adquirido a copy, etc)
-                            e de outros fatores de implementação do projeto.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <h5>Qual o prazo para o site ser entregue?</h5>
-                        <span class="faq-toggle-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p class="faq-answe-tex">O prazo de cada projeto varia de acordo com o tamanho e complexidade do
-                            site. Em média os
-                            sites tendem a ser totalmente desenvolvidos em torno de 21 dias úteis, porém pode ser em
-                            menos tempo ou em mais tempo, dependendo também da cooperação do cliente (envio do briefing,
-                            envio dos materiais necessários como fotos, referências, se não tiver adquirido a copy, etc)
-                            e de outros fatores de implementação do projeto.</p>
-                    </div>
-                </div>
-
-
-
-
+                <span class="faq-space">
+                    <h6>If you still have any questions, feel free to get in touch</h6>
+                    <h6>I’ll be more than happy to help.</h6>
+                </span>
             </div>
             <div class="right-column">
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <h5>Qual o prazo para o site ser entregue?</h5>
-                        <span class="faq-toggle-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p class="faq-answe-tex">O prazo de cada projeto varia de acordo com o tamanho e complexidade do
-                            site. Em média os
-                            sites tendem a ser totalmente desenvolvidos em torno de 21 dias úteis, porém pode ser em
-                            menos tempo ou em mais tempo, dependendo também da cooperação do cliente (envio do briefing,
-                            envio dos materiais necessários como fotos, referências, se não tiver adquirido a copy, etc)
-                            e de outros fatores de implementação do projeto.</p>
-                    </div>
-                </div>
-
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        <h5>Qual o prazo para o site ser entregue?</h5>
+                        <h5>How does it work and what are the payment methods?</h5>
                         <span class="faq-toggle-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p class="faq-answe-tex">O prazo de cada projeto varia de acordo com o tamanho e complexidade do
-                            site. Em média os
-                            sites tendem a ser totalmente desenvolvidos em torno de 21 dias úteis, porém pode ser em
-                            menos tempo ou em mais tempo, dependendo também da cooperação do cliente (envio do briefing,
-                            envio dos materiais necessários como fotos, referências, se não tiver adquirido a copy, etc)
-                            e de outros fatores de implementação do projeto.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <h5>Qual o prazo para o site ser entregue?</h5>
-                        <span class="faq-toggle-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p class="faq-answe-tex">O prazo de cada projeto varia de acordo com o tamanho e complexidade do
-                            site. Em média os
-                            sites tendem a ser totalmente desenvolvidos em torno de 21 dias úteis, porém pode ser em
-                            menos tempo ou em mais tempo, dependendo também da cooperação do cliente (envio do briefing,
-                            envio dos materiais necessários como fotos, referências, se não tiver adquirido a copy, etc)
-                            e de outros fatores de implementação do projeto.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <h5>Qual o prazo para o site ser entregue?</h5>
-                        <span class="faq-toggle-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p class="faq-answe-tex">O prazo de cada projeto varia de acordo com o tamanho e complexidade do
-                            site. Em média os
-                            sites tendem a ser totalmente desenvolvidos em torno de 21 dias úteis, porém pode ser em
-                            menos tempo ou em mais tempo, dependendo também da cooperação do cliente (envio do briefing,
-                            envio dos materiais necessários como fotos, referências, se não tiver adquirido a copy, etc)
-                            e de outros fatores de implementação do projeto.</p>
+                        <p class="faq-answe-tex">The hiring process is simple, transparent, and tailored to your needs.
+                            We offer different payment options:</p>
+                        <li class="faq-answe-list">Full payment with a 5% discount: Pay the full amount at the time of
+                            signing the contract. We
+                            accept Pix, bank transfer, or boleto.</li>
+                        <li class="faq-answe-list">50% at the start and 50% upon completion: Pay half at the beginning
+                            of the project and the
+                            rest upon final delivery. Available via Pix, bank transfer, or boleto (no discount).</li>
+                        <li class="faq-answe-list">Credit card: Installment options are available, with the
+                            administrator’s fees applied to the
+                            total project value.</li>
+                        <p class="faq-answe-alert">Important: The price charged covers only the development of the
+                            website or the contracted
+                            service. Additional costs such as domain registration and hosting are mandatory to keep the
+                            site online but are separate and not included in the project cost.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        <h5>Qual o prazo para o site ser entregue?</h5>
+                        <h5>Is there a guarantee or security when hiring your services?</h5>
                         <span class="faq-toggle-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p class="faq-answe-tex">O prazo de cada projeto varia de acordo com o tamanho e complexidade do
-                            site. Em média os
-                            sites tendem a ser totalmente desenvolvidos em torno de 21 dias úteis, porém pode ser em
-                            menos tempo ou em mais tempo, dependendo também da cooperação do cliente (envio do briefing,
-                            envio dos materiais necessários como fotos, referências, se não tiver adquirido a copy, etc)
-                            e de outros fatores de implementação do projeto.</p>
+                        <p class="faq-answe-tex">Yes. To ensure complete security and transparency, all projects are
+                            formalised through a legally binding digital contract, which outlines deadlines, costs,
+                            responsibilities, and the rights of both parties.
+                            This document is signed at the start of the project and guarantees that the entire process
+                            is carried out professionally, protecting you at every stage of the service.</p>
                     </div>
                 </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h5>Do you develop responsive websites?</h5>
+                        <span class="faq-toggle-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="faq-answe-tex">Yes. All of our projects are fully responsive, meaning they are
+                            designed to work perfectly on mobile phones, tablets, and desktops.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h5>What is the average turnaround time for a project?</h5>
+                        <span class="faq-toggle-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="faq-answe-tex">The delivery time depends on the complexity and type of project. Each
+                            service has its own specifics, so we work with personalised timelines.
+                            To get an estimated timeframe for your project, feel free to request a quote — we’ll assess
+                            your needs and send you a detailed schedule.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h5>How many revisions are included in the project?</h5>
+                        <span class="faq-toggle-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="faq-answe-tex">There’s no limit to the number of revisions. The project is only
+                            finalised when the client is 100% satisfied with the final result.
+                            Please note that all changes must be in line with the original project briefing.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h5>What is a link page and what is it used for?</h5>
+                        <span class="faq-toggle-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="faq-answe-tex">It’s a single page with direct links to your social media, WhatsApp,
+                            products or content. Ideal for Instagram profiles, artists, influencers, and small
+                            businesses that want to bring everything together in one place.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h5>How do I start a project with you?</h5>
+                        <span class="faq-toggle-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="faq-answe-tex">Simply click the "Start a Project" button in any of the service
+                            sections. You’ll be directed to a short form or straight to a WhatsApp chat so we can begin
+                            your briefing.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h5>Do you offer maintenance after the website is delivered?</h5>
+                        <span class="faq-toggle-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="faq-answe-tex">Yes. After delivery, we offer maintenance plans that include updates,
+                            fixes, and technical support. We can also carry out one-off adjustments upon request.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -732,13 +729,13 @@
                     <h2>together</h2>
                     <h5>Ready to elevate you digital presence?</h5>
 
-                    <p class="contact__text">Sinta-se à vontade para entrar em contato comigo enviando o formulário ao
-                        lado, e entrarei em contato com você o mais breve possível.</p>
+                    <p class="contact__text">Feel free to get in touch with me by submitting the form on the side, and I
+                        will contact you as soon as possible.</p>
 
 
                     <div class="contact__item">
                         <h5 class="contact__title">Telefone + WhatsApp</h5>
-                        <h5 class="contact__number">+55 11 9 9999-9999</h5>
+                        <h5 class="contact__number">+55 27 9 9647-6519</h5>
                     </div>
                     <div class="contact__item">
                         <h5 class="contact__title">Email</h5>
@@ -762,7 +759,7 @@
                 </span>
             </div>
 
-            <div class="right-column">
+            <div id="contact" class="right-column">
                 <div class="contact__right-form">
                     <form class="form-contato" id="formContato">
                         <input type="hidden" name="assunto" value="Mensagem recebida pelo site!">
