@@ -59,18 +59,18 @@ body {
     scroll-margin-top: 75px;
 }
 
-.title-center{
+.title-center {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.columns-50-50{
+.columns-50-50 {
     display: grid;
     grid-template-columns: 0.50fr 0.50fr;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .left-column,
@@ -123,3 +123,43 @@ h6 {
     font-size: 1rem;
     margin-bottom: 1em;
 }
+
+
+
+@media (max-width: 767px) {
+    .container {
+        padding: 1rem 1rem;
+        height: auto;
+        width: auto;
+    }
+
+    .columns-50-50 {
+        grid-template-columns: 1fr;
+
+
+    }
+
+    /* Tablet */
+    @media (min-width: 768px) and (max-width: 1024px) {
+
+        /* Estilos para tablets */
+    }
+
+    /* Laptop */
+    @media (min-width: 1025px) and (max-width: 1279px) {
+
+        /* Estilos para notebooks */
+    }
+
+
+    /* desktops */
+    @media (min-width: 1280px) and (max-width: 1535px) {
+
+        /* Estilos para desktops */
+    }
+
+    /* ultrawide */
+    @media (min-width: 1536px) {
+
+        /* Estilos para monitores grandes, TVs etc. */
+    }
