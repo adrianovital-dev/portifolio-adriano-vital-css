@@ -22,14 +22,21 @@
 
 <body>
     <header>
-        <nav class="nav">
-            <div class="nav__logo">
-                <a href="index.html">
-                    <img src="/assets/img/others/Logo AdrianoVital.dev Transparente.png" alt="Logo AdrianoVital.dev"
-                        class="nav__brand">
-                </a>
-            </div>
-            <ul class="nav__menu">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <a href="index.html">
+                <img src="/assets/img/others/Logo AdrianoVital.dev Transparente.png" alt="AdrianoVital.dev logo"
+                    class="nav__brand" aria-label="Homepage">
+            </a>
+
+            <!-- Hamburger button -->
+            <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+
+            <!-- Navigation links -->
+            <ul class="nav__menu" id="nav-menu" role="list">
                 <li><a href="#home" class="nav__menu-item">HOME</a></li>
                 <li><a href="#service" class="nav__menu-item">SERVICE</a></li>
                 <li><a href="#skill" class="nav__menu-item">SKILL</a></li>
@@ -38,48 +45,53 @@
             </ul>
 
             <div class="nav__btn">
-                <a href="https://wa.me/5527996476519?text=%F0%9F%87%A7%F0%9F%87%B7%20Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20um%20projeto.%0A%F0%9F%87%AC%F0%9F%87%A7%20Hi!%20I%E2%80%99d%20like%20to%20talk%20about%20a%20project." target="_blank" class="btn__defaut-outline">Hire me</a>
+                <a href="https://wa.me/5527996476519" target="_blank" class="btn__defaut-outline">Hire me</a>
             </div>
-
         </nav>
     </header>
 
     <section id="home" class="banner">
-        <div class="banner__content">
-            <div class="banner__imag">
-                <img src="/assets/img/others/foto perfil.png" alt="" class="banner__imag-perfil">
+        <div class="banner__content" data-aos="fade-up" data-aos-duration="800">
+            <div class="banner__image" data-aos="zoom-in" data-aos-delay="200">
+                <img src="/assets/img/others/foto perfil.png" alt="Adriano Vital - Desenvolvedor Front-End"
+                    class="banner__image-profile" loading="lazy" decoding="async">
             </div>
-            <div class="banner__description">
+            <div class="banner__content-text" data-aos="fade-up" data-aos-delay="200">
                 <h1>Hi, I'm</h1>
                 <h2>Adriano Vital</h2>
                 <h5>a Front-end developer</h5>
-                <p class="banner__description-text">I’m passionate about creating impactful digital experiences that go
+                <p class="banner__text">I’m passionate about creating impactful digital experiences that go
                     beyond design. I develop strategic solutions that strengthen brands, increase conversions, and
                     deliver real results. Every project is crafted not only to look great, but also to ensure
                     performance, accessibility, and a seamless user experience.</p>
-                <p class="banner__description-text">My mission is to turn ideas into innovative digital products that
+                <p class="banner__text">My mission is to turn ideas into innovative digital products that
                     drive business growth. If you’re looking for a dedicated professional to create a web application
                     that highlights your brand and fosters growth, let’s talk. I’m ready to build the solution you need.
                 </p>
 
                 <div class="banner__btn">
-                    <div class="banner__btn-standard">
-                        <a href="https://wa.me/5527996476519?text=%F0%9F%87%A7%F0%9F%87%B7%20Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20um%20projeto.%0A%F0%9F%87%AC%F0%9F%87%A7%20Hi!%20I%E2%80%99d%20like%20to%20talk%20about%20a%20project." target="_blank" class="btn__defaut-solid"> Hire me </a>
+                    <div class="banner__buttons-group">
+                        <a href="https://wa.me/5527996476519?text=%F0%9F%87%A7%F0%9F%87%B7%20Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20um%20projeto.%0A%F0%9F%87%AC%F0%9F%87%A7%20Hi!%20I%E2%80%99d%20like%20to%20talk%20about%20a%20project."
+                            target="_blank" class="btn__defaut-solid"> Hire me </a>
                         <a href="#" class="btn__defaut-outline" onclick="openDownloadModal()">Download CV</a>
 
                     </div>
-                    <ul class="banner__btn-social">
-
-
-                        <a href="https://wa.me/5527996476519?text=%F0%9F%87%A7%F0%9F%87%B7%20Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20um%20projeto.%0A%F0%9F%87%AC%F0%9F%87%A7%20Hi!%20I%E2%80%99d%20like%20to%20talk%20about%20a%20project." target="_blank"><i class="fa-brands fa-whatsapp banner__btn-social-item"></i></a>
-                        <a href="mailto:adrianovital.dev@gmail.com"><i class="fa-solid fa-envelope banner__btn-social-item"></i></a>
-                        <a href="https://www.instagram.com/adrianovital.dev/" target="_blank"><i class="fa-brands fa-instagram banner__btn-social-item"></i></a>
-                        <a href="https://www.linkedin.com/in/adrianovital/" target="_blank"><i class="fa-brands fa-linkedin banner__btn-social-item"></i></a>
-                        <a href="https://github.com/adrianovital-dev" target="_blank"><i class="fa-brands fa-github banner__btn-social-item"></i></i></a>
-                        <a href="https://www.behance.net/adrianovital-dev" target="_blank"><i class="fa-brands fa-behance banner__btn-social-item"></i></a>
-                        <a href="https://dribbble.com/adrianovital" target="_blank"><i class="fa-brands fa-dribbble banner__btn-social-item"></i></a>
-
-                        
+                    <ul class="banner__social-list">
+                        <li><a href="https://wa.me/5527996476519?text=%F0%9F%87%A7%F0%9F%87%B7%20Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20um%20projeto.%0A%F0%9F%87%AC%F0%9F%87%A7%20Hi!%20I%E2%80%99d%20like%20to%20talk%20about%20a%20project."
+                                aria-label="WhatsApp Adriano Vital" target="_blank"><i
+                                    class="fa-brands fa-whatsapp social-icon"></i></a></li>
+                        <li><a href="mailto:adrianovital.dev@gmail.com" aria-label="Email Adriano Vital"><i
+                                    class="fa-solid fa-envelope social-icon"></i></a></li>
+                        <li><a href="https://www.instagram.com/adrianovital.dev/" aria-label="Instagram Adriano Vital"
+                                target="_blank"><i class="fa-brands fa-instagram social-icon"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/adrianovital/" aria-label="Likedin Adriano Vital"
+                                target="_blank"><i class="fa-brands fa-linkedin social-icon"></i></a></li>
+                        <li><a href="https://github.com/adrianovital-dev" aria-label="Github Adriano Vital"
+                                target="_blank"><i class="fa-brands fa-github social-icon"></i></i></a></li>
+                        <li><a href="https://www.behance.net/adrianovital-dev" aria-label="Behance Adriano Vital"
+                                target="_blank"><i class="fa-brands fa-behance social-icon"></i></a></li>
+                        <li><a href="https://dribbble.com/adrianovital" aria-label="Dribble Adriano Vital"
+                                target="_blank"><i class="fa-brands fa-dribbble social-icon"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -131,7 +143,8 @@
                     <li><i class="fa-solid fa-check service__cards-icon"></i> Creating visually engaging and intuitive
                         web experiences focused on performance and usability.</li>
                 </ul>
-                <a href="https://wa.me/5527996476519?text=%F0%9F%87%A7%F0%9F%87%B7%20Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20um%20projeto.%0A%F0%9F%87%AC%F0%9F%87%A7%20Hi!%20I%E2%80%99d%20like%20to%20talk%20about%20a%20project." target="_blank" class="btn__defaut-solid service__btn"><i
+                <a href="https://wa.me/5527996476519?text=%F0%9F%87%A7%F0%9F%87%B7%20Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20um%20projeto.%0A%F0%9F%87%AC%F0%9F%87%A7%20Hi!%20I%E2%80%99d%20like%20to%20talk%20about%20a%20project."
+                    target="_blank" class="btn__defaut-solid service__btn"><i
                         class="fa-brands fa-whatsapp btn__defaut-icon"></i>Start a project</a>
             </div>
 
@@ -149,7 +162,8 @@
                     <li><i class="fa-solid fa-check service__cards-icon"></i>Web Copywriting</li>
 
                 </ul>
-                <a href="https://wa.me/5527996476519?text=%F0%9F%87%A7%F0%9F%87%B7%20Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20um%20projeto.%0A%F0%9F%87%AC%F0%9F%87%A7%20Hi!%20I%E2%80%99d%20like%20to%20talk%20about%20a%20project." target="_blank" class="btn__defaut-solid service__btn"><i
+                <a href="https://wa.me/5527996476519?text=%F0%9F%87%A7%F0%9F%87%B7%20Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20um%20projeto.%0A%F0%9F%87%AC%F0%9F%87%A7%20Hi!%20I%E2%80%99d%20like%20to%20talk%20about%20a%20project."
+                    target="_blank" class="btn__defaut-solid service__btn"><i
                         class="fa-brands fa-whatsapp btn__defaut-icon"></i>Start a project</a>
             </div>
 
@@ -163,7 +177,8 @@
                     <li><i class="fa-solid fa-check service__cards-icon"></i> Business Cards & Stationery Design</li>
                     <li><i class="fa-solid fa-check service__cards-icon"></i> Flyers, Leaflets, Catalogues, Banners</li>
                 </ul>
-                <a href="https://wa.me/5527996476519?text=%F0%9F%87%A7%F0%9F%87%B7%20Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20um%20projeto.%0A%F0%9F%87%AC%F0%9F%87%A7%20Hi!%20I%E2%80%99d%20like%20to%20talk%20about%20a%20project." target="_blank" class="btn__defaut-solid service__btn"><i
+                <a href="https://wa.me/5527996476519?text=%F0%9F%87%A7%F0%9F%87%B7%20Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20um%20projeto.%0A%F0%9F%87%AC%F0%9F%87%A7%20Hi!%20I%E2%80%99d%20like%20to%20talk%20about%20a%20project."
+                    target="_blank" class="btn__defaut-solid service__btn"><i
                         class="fa-brands fa-whatsapp btn__defaut-icon"></i>Start a project</a>
             </div>
 
@@ -179,7 +194,8 @@
                     <li><i class="fa-solid fa-check service__cards-icon"></i>Facebook & Instagram Advertising</li>
                     <li><i class="fa-solid fa-check service__cards-icon"></i>Copywriting</li>
                 </ul>
-                <a href="https://wa.me/5527996476519?text=%F0%9F%87%A7%F0%9F%87%B7%20Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20um%20projeto.%0A%F0%9F%87%AC%F0%9F%87%A7%20Hi!%20I%E2%80%99d%20like%20to%20talk%20about%20a%20project." target="_blank" class="btn__defaut-solid service__btn"><i
+                <a href="https://wa.me/5527996476519?text=%F0%9F%87%A7%F0%9F%87%B7%20Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20um%20projeto.%0A%F0%9F%87%AC%F0%9F%87%A7%20Hi!%20I%E2%80%99d%20like%20to%20talk%20about%20a%20project."
+                    target="_blank" class="btn__defaut-solid service__btn"><i
                         class="fa-brands fa-whatsapp btn__defaut-icon"></i>Start a project</a>
             </div>
         </div>
@@ -547,7 +563,9 @@
                 <h5>My Working Process</h5>
                 <h6 class="steps__text">Give credibility to your business and amplify its potential with a website that
                     communicates the value of your product, focused on results!"</h6>
-                <a href="https://wa.me/5527996476519?text=%F0%9F%87%A7%F0%9F%87%B7%20Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20um%20projeto.%0A%F0%9F%87%AC%F0%9F%87%A7%20Hi!%20I%E2%80%99d%20like%20to%20talk%20about%20a%20project." target="_blank" class="btn__defaut-solid"><i class="fa-brands fa-whatsapp btn__defaut-icon"></i>Get a
+                <a href="https://wa.me/5527996476519?text=%F0%9F%87%A7%F0%9F%87%B7%20Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20um%20projeto.%0A%F0%9F%87%AC%F0%9F%87%A7%20Hi!%20I%E2%80%99d%20like%20to%20talk%20about%20a%20project."
+                    target="_blank" class="btn__defaut-solid"><i class="fa-brands fa-whatsapp btn__defaut-icon"></i>Get
+                    a
                     quote</a>
             </div>
             <div class="right-column">
@@ -747,13 +765,20 @@
                     <div class="contact__item">
                         <h5 class="contact__title">Social network</h5>
                         <div class="contact__social">
-                            <a href="https://wa.me/5527996476519?text=%F0%9F%87%A7%F0%9F%87%B7%20Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20um%20projeto.%0A%F0%9F%87%AC%F0%9F%87%A7%20Hi!%20I%E2%80%99d%20like%20to%20talk%20about%20a%20project." target="_blank"><i class="fa-brands fa-whatsapp contact__social-item"></i></a>
-                            <a href="mailto:adrianovital.dev@gmail.com"><i class="fa-solid fa-envelope contact__social-item"></i></a>
-                            <a href="https://www.instagram.com/adrianovital.dev/" target="_blank"><i class="fa-brands fa-instagram contact__social-item"></i></a>
-                            <a href="https://www.linkedin.com/in/adrianovital/" target="_blank"><i class="fa-brands fa-linkedin contact__social-item"></i></a>
-                            <a href="https://github.com/adrianovital-dev" target="_blank"><i class="fa-brands fa-github contact__social-item"></i></i></a>
-                            <a href="https://www.behance.net/adrianovital-dev" target="_blank"><i class="fa-brands fa-behance contact__social-item"></i></a>
-                            <a href="https://dribbble.com/adrianovital" target="_blank"><i class="fa-brands fa-dribbble contact__social-item"></i></a>
+                            <a href="https://wa.me/5527996476519?text=%F0%9F%87%A7%F0%9F%87%B7%20Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20um%20projeto.%0A%F0%9F%87%AC%F0%9F%87%A7%20Hi!%20I%E2%80%99d%20like%20to%20talk%20about%20a%20project."
+                                target="_blank"><i class="fa-brands fa-whatsapp contact__social-item"></i></a>
+                            <a href="mailto:adrianovital.dev@gmail.com"><i
+                                    class="fa-solid fa-envelope contact__social-item"></i></a>
+                            <a href="https://www.instagram.com/adrianovital.dev/" target="_blank"><i
+                                    class="fa-brands fa-instagram contact__social-item"></i></a>
+                            <a href="https://www.linkedin.com/in/adrianovital/" target="_blank"><i
+                                    class="fa-brands fa-linkedin contact__social-item"></i></a>
+                            <a href="https://github.com/adrianovital-dev" target="_blank"><i
+                                    class="fa-brands fa-github contact__social-item"></i></i></a>
+                            <a href="https://www.behance.net/adrianovital-dev" target="_blank"><i
+                                    class="fa-brands fa-behance contact__social-item"></i></a>
+                            <a href="https://dribbble.com/adrianovital" target="_blank"><i
+                                    class="fa-brands fa-dribbble contact__social-item"></i></a>
                         </div>
                     </div>
                 </span>

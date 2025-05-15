@@ -1,4 +1,4 @@
-header{
+header {
     height: 10vh;
     position: fixed;
     top: 0;
@@ -11,49 +11,47 @@ header{
     align-items: center;
 }
 
-
 header.scrolled {
-    box-shadow: 0px 4px 4px var(--gray-lighter); /* Sombra visível somente no menu */
+    box-shadow: 0px 4px 4px var(--gray-lighter);
 }
 
-.nav{
+.nav {
     width: 100%;
     display: flex;
-    justify-content: space-between; /* Espaça os itens do menu e do botão */
+    justify-content: space-between;
     align-items: center;
     padding: 0 2em;
     margin-left: 3em;
     margin-right: 1em;
 }
 
-.nav__logo{
-    text-align: left;
-}
 
-.nav__brand{
+.nav__brand {
     width: 250px;
-
 }
 
-.nav__menu{
+.nav__menu {
     display: flex;
     gap: 1.5em;
     text-decoration: none;
-
 }
 
-.nav__menu-item{
+.nav__menu-item.active {
+  font-weight: bold;
+  color: var(--blue);
+}
+
+.nav__menu-item {
     text-decoration: none;
     color: var(--black);
     font-size: 16px;
 }
 
-.nav__menu-item:hover{
+.nav__menu-item:hover {
     color: var(--blue);
 }
 
-
-.nav__btn{
+.nav__btn {
     display: flex;
     align-items: center;
     gap: 1em;
@@ -64,3 +62,62 @@ header.scrolled {
     padding: 0.5em 1em;
     font-size: 14px;
 }
+
+/* Hamburger button - hidden by default */
+.nav__toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 35px;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav__toggle-bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--black);
+    transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav__menu {
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+        padding: 2em 0;
+        display: none;
+    }
+
+    .nav__menu.show {
+        display: flex; !important;
+    }
+
+    .nav__btn {
+        display: none;
+    }
+
+    .nav__toggle {
+        display: flex;
+    }
+
+    .nav {
+        padding: 0 1em;
+        margin-left: 5.5em;
+    }
+
+    .nav__brand {
+        width: 180px;
+    }
+}
+

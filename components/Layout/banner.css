@@ -1,6 +1,6 @@
 .banner {
     height: 100vh;
-    padding-top: 10vh;
+    padding-top: 15vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -16,25 +16,30 @@
     gap: 6em;
     margin-left: 6em;
     margin-right: 11em;
+    margin-top: 10em;
 }
 
-.banner__imag {
+.banner__image {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
 }
 
-.banner__imag-perfil {
+.banner__image-profile {
     max-width: 75%;
     height: auto;
+    will-change: transform, opacity;
+    transition: transform 0.3s ease;
 }
 
-.banner__description {
+
+.banner__content-text {
     flex: 1;
+    max-width: 600px;
 }
 
-.banner__description-text {
+.banner__text {
     margin: 1.2em 0;
     text-align: justify;
     line-height: 1.6em;
@@ -42,32 +47,32 @@
 
 .banner__btn {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     gap: 1em;
-    align-items: flex-start;
     margin: 3em 0;
 }
 
-.banner__btn-standard {
+.banner__buttons-group {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
 }
 
-.banner__btn-social {
+.banner__social-list {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5em;
 }
 
-.banner__btn-social-item {
+.social-icon {
     color: var(--gray-medium);
     font-size: 20px;
     text-align: center;
     transition: 0.3s;
 }
 
-.banner__btn-social-item:hover {
+.social-icon:hover {
     color: var(--blue);
     transform: translateY(-4px) scale(1.05);
 }
@@ -133,25 +138,23 @@
     .banner__content {
         flex-direction: column;
         gap: 2em;
-        margin: 0 6rem;
+        margin: 0 2.5em;
         text-align: center;
     }
 
-    .banner__imag-perfil {
+    .banner__image-perfil {
         max-width: 60%;
     }
 
     .banner__btn {
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
         margin: 2em 0;
     }
 
-    .banner__btn-standard {
-        
+    .banner__buttons-group{
         align-items: center;
-    }
-
-    .banner__btn-social {
         justify-content: center;
     }
 
@@ -164,6 +167,11 @@
 
 /* Tablet (768px a 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
+    .banner {
+        height: auto;
+        padding-top: 4em;
+    }
+
     .banner__content {
         flex-direction: column;
         gap: 3em;
@@ -175,7 +183,7 @@
 
     }
 
-    .banner__imag-perfil {
+    .banner__image-perfil {
         max-width: 65%;
     }
 
@@ -187,11 +195,16 @@
 /* Laptop (1025px a 1279px) */
 @media (min-width: 1025px) and (max-width: 1279px) {
     .banner__content {
-        gap: 4em;
+        gap: 1em;
         margin: 0 4em;
     }
 
-    .banner__imag-perfil {
+    .banner__btn {
+        align-items: left;
+
+    }
+
+    .banner__image-perfil {
         max-width: 60%;
     }
 }
@@ -199,11 +212,11 @@
 /* Desktop (1280px a 1535px) */
 @media (min-width: 1280px) and (max-width: 1535px) {
     .banner__content {
-        gap: 5em;
+        gap: 2em;
         margin: 0 5em;
     }
 
-    .banner__imag-perfil {
+    .banner__image-perfil {
         max-width: 65%;
     }
 }
@@ -211,11 +224,11 @@
 /* Ultrawide (1536px+) */
 @media (min-width: 1536px) {
     .banner__content {
-        gap: 8em;
+        gap: 1em;
         margin: 0 10em;
     }
 
-    .banner__imag-perfil {
+    .banner__image-perfil {
         max-width: 70%;
     }
 }

@@ -135,8 +135,18 @@ h6 {
 
     .columns-50-50 {
         grid-template-columns: 1fr;
+    }
 
+    .stripe__text {
+        font-size: 16px;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;  /* IE 10+ */
+    }
 
+    .stripe__text::-webkit-scrollbar {
+        display: none; /* Chrome, Safari */
     }
 
     /* Tablet */
