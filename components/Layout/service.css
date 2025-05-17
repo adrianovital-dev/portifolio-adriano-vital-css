@@ -1,85 +1,124 @@
+.service {
+  padding-bottom: 4em;
+}
+
 .service__content {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;
-    margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1em;
+  margin-top: 2em;
 }
 
 .service__card {
-    display: flex;
-    /* Ativa o Flexbox */
-    flex-direction: column;
-    /* Organiza os elementos verticalmente */
-    justify-content: space-between;
-    /* Garante que o botão fique no final */
-    align-items: flex-start;
-    width: 300px;
-    height: 355px;
-    padding: 2em;
-    border-radius: 28px;
-    background-color: var(--gray-extra-light);
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 300px;
+  min-height: 355px;
+  padding: 2em;
+  border-radius: 28px;
+  background-color: var(--gray-extra-light);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.service__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .service__card-titles {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.service_card-icon{
-    font-size: 40px;
-    color: var(--blue);
-    margin-right: 0.5em;
+.service__card-icon {
+  font-size: 40px;
+  color: var(--blue);
+  margin-right: 0.5em;
 }
 
-.service__cards-title {
-    text-align: left;
-    width: 60%;
-    line-height: 1.2em;
-    margin: 0.7em 0;
-    font-weight: 500;
+.service__card-title {
+  text-align: left;
+  width: 60%;
+  line-height: 1.2em;
+  margin: 0.7em 0;
+  font-weight: 500;
 }
 
-.service__cards-icon {
-    font-size: 16px;
-    color: var(--blue);
+.service__card-icon-end {
+  font-size: 16px;
+  color: var(--blue);
 }
 
-.service__cards-list li {
-    font-size: 14px;
-    line-height: 1.5em;
+.service__card-list li {
+  font-size: 14px;
+  line-height: 1.5em;
 }
 
 .service__btn {
-    margin-top: auto;
-    /* Empurra o botão para o final do card */
-    align-self: stretch;
-    /* Faz o botão ocupar toda a largura do card, se necessário */
+  margin-top: auto;
+  align-self: stretch;
 }
 
+/* Mobile */
+@media (max-width: 767px) {
+  .service__content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    padding: 0 1em;
+    /* protege as laterais em telas pequenas */
+    margin-bottom: 2em;
+  }
 
+  .service__card {
+    width: 100%;
+    max-width: 340px;
+    box-sizing: border-box;
+  }
 
-/* mobile */
-@media (max-width: 767px) {}
+  .title-center {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+}
 
 /* Tablet */
-@media (min-width: 768px) and (max-width: 1024px) {}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .service__content {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .service__card {
+    width: 45%;
+  }
+}
 
 /* Laptop */
 @media (min-width: 1025px) and (max-width: 1279px) {
-    .service__card {}
+  .service__card {
+    width: 280px;
+  }
 }
 
-
-/* desktops */
+/* Desktop */
 @media (min-width: 1280px) and (max-width: 1535px) {
-    .service__card {}
+  .service__card {
+    width: 260px;
+  }
 }
 
-/* ultrawide */
+/* Ultrawide */
 @media (min-width: 1536px) {
-    /* Estilos para monitores grandes, TVs etc. */
+  .service__card {
+    width: 320px;
+  }
 }

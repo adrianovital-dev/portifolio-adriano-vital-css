@@ -1,12 +1,12 @@
-.skills{
+.skills {
     background-color: var(--gray-extra-light);
 }
 
-.skills__content{
-  gap: 5em;
+.skills__content {
+    gap: 5em;
 }
 
-.skill__tecnology-item{
+.skills__technology-list {
     display: flex;
     flex-wrap: wrap;
     gap: 0.7em;
@@ -14,39 +14,127 @@
 }
 
 
-.skill__tecnology-item li {
+.skills__technology-list li {
     display: flex;
-    flex-direction: column; /* Alinha o conteúdo verticalmente */
+    flex-direction: column;
+    /* Alinha o conteúdo verticalmente */
     height: 90px;
-    width: 100px; /* Largura fixa para os itens */
-    align-items: center; /* Centraliza o ícone e o texto */
-    justify-content: center; /* Centraliza verticalmente */
-    list-style: none; /* Remove o estilo de lista */
-    border: 1px solid var(--gray-lighter); /* Adiciona uma borda suave */
-    border-radius: 20px; /* Bordas arredondadas */
-    padding: 1em; /* Espaçamento interno */
-    background-color: var(--white); /* Fundo branco */
-    box-shadow: 0 2px 4px var(--gray-lighter); /* Sombra leve */
-    text-align: center; /* Centraliza o texto */
+    width: 100px;
+    /* Largura fixa para os itens */
+    align-items: center;
+    /* Centraliza o ícone e o texto */
+    justify-content: center;
+    /* Centraliza verticalmente */
+    list-style: none;
+    /* Remove o estilo de lista */
+    border: 1px solid var(--gray-lighter);
+    /* Adiciona uma borda suave */
+    border-radius: 20px;
+    /* Bordas arredondadas */
+    padding: 1em;
+    /* Espaçamento interno */
+    background-color: var(--white);
+    /* Fundo branco */
+    box-shadow: 0 2px 4px var(--gray-lighter);
+    /* Sombra leve */
+    text-align: center;
+    /* Centraliza o texto */
     transition: all 0.3s ease;
     font-size: 13px;
 }
 
 
-.skill__tecnology-item li i {
+.skills__technology-list li i {
     margin-bottom: 0.3em;
-    color: var(--gray); /* Cor do ícone */
+    color: var(--gray);
+    /* Cor do ícone */
     font-size: 35px;
 
 }
 
-.skill__tecnology-item li:hover {
+.skills__technology-list li:hover {
     transform: translateY(-4px) scale(1.05);
     box-shadow: 0 6px 12px var(--gray-lighter);
 }
 
-.skills__tecnology ul + .skills__title-item {
+.skills__tecnology ul+.skills__title-item {
     margin-top: 2em;
     border-top: 1px solid var(--gray-lighter);
     padding-top: 1.5em;
+}
+
+.skills__btn {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.skills__btn h6 {
+    text-align: left;
+}
+
+.skills__btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.skills__btn-group a {
+    flex: 1 1 45%;
+    /* dois por linha */
+
+    text-align: center;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+
+    .skills__technology-item {
+        width: 90px;
+        height: 90px;
+        font-size: 13px;
+    }
+
+    .skills__technology-item i {
+        font-size: 30px;
+    }
+
+
+}
+
+@media (min-width: 1025px) and (max-width: 1279px) {
+    .skills__technology-item {
+        width: 100px;
+        height: 90px;
+    }
+
+}
+
+
+@media (min-width: 1280px) and (max-width: 1535px) {
+    .skills__technology-item {
+        width: 110px;
+        height: 95px;
+    }
+
+    .skills__btn-group {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1536px) {
+    .skills__technology-item {
+        width: 120px;
+        height: 100px;
+        font-size: 14px;
+    }
+
+    .skills__technology-item i {
+        font-size: 40px;
+    }
 }
