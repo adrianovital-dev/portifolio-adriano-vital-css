@@ -45,3 +45,5 @@ function downloadCV(lang) {
         document.getElementById('modal-download').style.display = 'none';
     }, 500);
 }
+
+
