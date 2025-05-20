@@ -1,120 +1,162 @@
 .contact {
-    height: 85vh;
-    max-height: 100%;
-    max-width: 100vw;
-    max-height: 90vh;
-    padding: 5rem 5rem;
-    scroll-margin-top: 75px;
+  height: 85vh;
+
+  padding: 5rem 5rem;
+  scroll-margin-top: 75px;
 }
 
 /* Left columns */
 
-.contact__content{
+.contact__content {
   padding-left: 5em;
 }
 
-.contact__item{
+.contact__item {
   margin: 2em 0;
-  
+
 }
 
-.contact__number{
+.contact__number {
   text-align: left;
 }
 
 .contact__title {
-    font-weight: 600;
-    color: var(--blue);
-    margin: 0.3em 0;
-    text-align: left;
+  font-weight: 600;
+  color: var(--blue);
+  margin: 0.3em 0;
+  text-align: left;
 }
 
 .contact__social-item {
-    text-align: left;
-    font-size: 22px;
-    color: var(--gray-medium);
-    margin: 0.3em 0.3em;
+  text-align: left;
+  font-size: 22px;
+  color: var(--gray-medium);
+  margin: 0.3em 0.3em;
 }
 
-.contact__social-item:hover{
-    color: var(--blue);
-    transition: all 0.3s ease;
-    transform: translateY(-4px) scale(1.05);
+.contact__social-item:hover {
+  color: var(--blue);
+  transition: all 0.3s ease;
+  transform: translateY(-4px) scale(1.05);
 }
 
-.contact__text{
-    margin: 2em 0;
-    font-size: 16px;
-    color: var(--gray);
-    width: 75%;
+.contact__text {
+  margin: 2em 0;
+  font-size: 16px;
+  color: var(--gray);
+  width: 75%;
 }
 
-#contact {
+.contact {
   min-height: 80vh;
 }
 
 /* Right columns / Forms */
 
-.contact__right-form{
-    max-width: 800px;
-    background: var(--white);
-    border-radius: 12px;
+.contact__right-form {
+  max-width: 800px;
+  background: var(--white);
+  border-radius: 12px;
 }
 
-.form-contato {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-  }
-  
-  .campo-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .campo-form label {
-    margin-bottom: 5px;
-    font-weight: 600;
-    color: var(--gray);
-  }
-  
-  .campo-form input,
-  .campo-form textarea {
-    padding: 12px 15px;
-    border: 1px solid var(--gray-extra-light);
-    border-radius: 8px;
-    font-size: 1rem;
-    background: var(--gray-extra-light);
-    transition: border-color 0.3s, background 0.3s;
-    font: var(--fonte-primaria);
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact__form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__form-field label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: var(--gray);
+}
+
+.contact__form-field input,
+.contact__form-field textarea {
+  padding: 12px 15px;
+  border: 1px solid var(--gray-extra-light);
+  border-radius: 8px;
+  font-size: 1rem;
+  background: var(--gray-extra-light);
+  transition: border-color 0.3s, background 0.3s;
+  font: var(--fonte-primaria);
+}
+
+.contact__form-phone-line {
+  display: flex;
+  gap: 15px;
+}
+
+.contact__form-phone-line .contact__form-field.pequeno {
+  flex: 0 0 80px;
+  /* largura fixa pro CO */
+}
+
+.contact__form-phone-line .contact__form-field {
+  flex: 1;
+  /* telefone ocupa o restante */
+}
+
+.contact__form-field input:focus,
+.contact__form-field textarea:focus {
+  border-color: var(--gray-lighter);
+  background: var(--gray-ultra-light);
+  outline: none;
+}
+
+.contact__form-buttons {
+  display: flex;
+  justify-content: right;
+  gap: 1em;
+  margin-top: 15px;
+}
+
+
+@media (max-width: 1024px) {
+  .contact {
+    padding: 4rem 1rem 0 1rem;
+    height: auto;
+    max-height: 100%;
   }
 
-  .line-telephone {
-    display: flex;
-    gap: 15px;
+  .contact__content {
+    padding-left: 0;
   }
-  
-  .line-telephone .campo-form.pequeno {
-    flex: 0 0 80px; /* largura fixa pro CO */
+
+  .contact__right-form {
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+    box-sizing: border-box;
   }
-  
-  .line-telephone .campo-form {
-    flex: 1; /* telefone ocupa o restante */
+
+  .contact__form-field input,
+  .contact__form-field textarea {
+    width: 100%;
   }
-  
-  .campo-form input:focus,
-  .campo-form textarea:focus {
-    border-color: var(--gray-lighter);
-    background: var(--gray-ultra-light);
-    outline: none;
+
+  .contact__form-buttons {
+    margin-top: 0;
   }
-  
-  .button-container {
-    display: flex;
-    justify-content:right;
-    gap: 1em;
-    margin-top: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contact {
+    padding: 3em;
   }
-  
- 
-  
+}
+
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .contact {
+    padding: 3em;
+  }
+
+  .contact__content {
+    padding-left: 0em;
+  }
+}

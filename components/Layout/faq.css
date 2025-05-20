@@ -5,8 +5,6 @@
   padding: 5rem 5rem;
 }
 
-
-.faq,
 .faq-question h5 {
   font-family: var(--fonte-primaria);
 
@@ -30,7 +28,9 @@
   padding: 0;
 }
 
-
+.faq-question h5 {
+  text-align: left;
+}
 
 
 .faq-toggle-icon {
@@ -47,19 +47,19 @@
   padding-left: 0.5rem;
 }
 
-.faq-answe-tex {
+.faq__answer-text {
   text-align: justify;
   font-size: 13px;
- 
+
 }
 
-.faq-answe-alert {
+.faq__answer-alert {
   color: var(--gray);
   font-size: 11px;
   margin: 0.8em 0;
 }
 
-.faq-answe-list {
+.faq__answer-list {
   text-align: justify;
   font-size: 13px;
   margin: 1em 0;
@@ -82,10 +82,35 @@
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .faq-item.active .faq-answer {
   animation: fadeIn 0.4s ease-in-out;
+}
+
+
+
+
+@media (max-width: 767px) {
+  .faqs {
+    padding: 5rem 1.5rem;
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .faqs {
+    padding: 3em 3em;
+
+  }
 }

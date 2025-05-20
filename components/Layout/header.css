@@ -101,7 +101,7 @@ header.scrolled {
 
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .nav__menu {
         position: absolute;
         top: 10vh;
