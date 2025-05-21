@@ -137,4 +137,8 @@
   .projects__grid {
     column-count: 4;
   }
+
+  .projects{
+    padding: 3em;
+  }
 }

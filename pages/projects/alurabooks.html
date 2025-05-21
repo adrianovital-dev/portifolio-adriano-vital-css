@@ -20,40 +20,46 @@
 </head>
 
 <body>
-  <header>
-        <nav class="nav">
-            <div class="nav__logo">
-                <a href="index.html">
-                    <img src="/assets/img/others/Logo AdrianoVital.dev Transparente.png" alt="Logo AdrianoVital.dev"
-                        class="nav__brand">
-                </a>
-            </div>
-            <ul class="nav__menu">
-                <li><a href="#home" class="nav__menu-item">HOME</a></li>
-                <li><a href="#service" class="nav__menu-item">SERVICE</a></li>
-                <li><a href="#skill" class="nav__menu-item">SKILL</a></li>
-                <li><a href="#project" class="nav__menu-item">PROJECT</a></li>
-                <li><a href="#contact" class="nav__menu-item">CONTACT</a></li>
+     <header>
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <a href="/index.html">
+                <img src="/assets/img/others/Logo AdrianoVital.dev Transparente.png" alt="AdrianoVital.dev logo"
+                    class="nav__brand" aria-label="Homepage">
+            </a>
+
+            <!-- Hamburger button -->
+            <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+
+            <!-- Navigation links -->
+            <ul class="nav__menu" id="nav-menu" role="list">
+                <li><a href="/index.html#home" class="nav__menu-item">HOME</a></li>
+                <li><a href="/index.html#service" class="nav__menu-item">SERVICE</a></li>
+                <li><a href="/index.html#skill" class="nav__menu-item">SKILL</a></li>
+                <li><a href="/index.html#project" class="nav__menu-item">PROJECT</a></li>
+                <li><a href="/index.html#contact" class="nav__menu-item">CONTACT</a></li>
             </ul>
 
             <div class="nav__btn">
-                <a href="" class="btn__defaut-outline">Hire me</a>
+                <a href="https://wa.me/5527996476519" target="_blank" class="btn__defaut-outline">Hire me</a>
             </div>
-
         </nav>
     </header>
 
     <section class="project">
-
+        <div class="project__btn">
+            <a href="javascript:history.back()" class="btn__tertiary">
+                <i class="fa-solid fa-arrow-left fa-rotate-by btn__tertiary-icon"
+                    style="--fa-rotate-angle: +45deg;"></i>
+                <span class="hover-underline-animation">Back</span>
+            </a>
+        </div>
         <div class="columns-50-50">
             <div class="project__left-column">
-                <div class="project__btn">
-                    <a href="javascript:history.back()" class="btn__tertiary">
-                        <i class="fa-solid fa-arrow-left fa-rotate-by btn__tertiary-icon"
-                            style="--fa-rotate-angle: +45deg;"></i>
-                        <span class="hover-underline-animation">Voltar</span>
-                    </a>
-                </div>
+
                 <h1>projects.</h1>
                 <h2 class="project__name">AuraBooks</h2>
                 <h5>HTML | CSS </h5>
@@ -73,7 +79,7 @@
                     Fique à vontade para conferir o Projeto visitando o Live Link.</p>
 
                 <a href="#" class="btn__tertiary">
-                    <span class="hover-underline-animation">Visitar site</span>
+                    <span class="hover-underline-animation">Visit website</span>
                     <i class="fa-solid fa-arrow-right fa-rotate-by btn__tertiary-icon"
                         style="--fa-rotate-angle: -45deg;"></i>
                 </a>
@@ -83,21 +89,17 @@
                         style="--fa-rotate-angle: -45deg;"></i>
                 </a>
                 <div class="project__btn">
-                    <a href="#" class="btn__defaut-solid"><i class="fa-brands fa-whatsapp btn__defaut-icon"></i>Iniciar
-                        um
-                        projeto</a>
+                    <a href="#" class="btn__defaut-solid"><i class="fa-brands fa-whatsapp btn__defaut-icon"></i>Start a project</a>
                 </div>
             </div>
 
             <div class="project__right-column">
                 <div class="slider">
-                    <div class="slider">
-                        <div class="slides">
-                            <img src="/assets/blog/23.webp" class="horizontal" alt="imagem horizontal">
-                            <img src="/assets/project/1.png" class="vertical" alt="imagem vertical">
-                            <img src="/assets/blog/23.webp" class="horizontal" alt="imagem horizontal">
-                            <img src="/assets/project/1.png" class="vertical" alt="imagem vertical">
-                        </div>
+                    <div class="slides">
+                        <img src="/assets/blog/23.webp" class="horizontal" alt="imagem horizontal">
+                        <img src="/assets/project/1.png" class="vertical" alt="imagem vertical">
+                        <img src="/assets/blog/23.webp" class="horizontal" alt="imagem horizontal">
+                        <img src="/assets/project/1.png" class="vertical" alt="imagem vertical">
                     </div>
                 </div>
             </div>
@@ -108,7 +110,7 @@
     <hr />
     <footer class="footer">
         <div class="footer__copy">
-            <p class="footer__copy-text-copy">&copy; 2025 Adriano Vital. All right reserved.</p>
+            <p class="footer__copy-text-copy">&copy; 2025 Adriano Vital. All rights reserved.</p>
             <p class="footer__copy-text-by">Desenvolvido por <a href="#" class="footer__copy-bold">AdrianoVital<span
                         class="footer__text-bold-color">.dev</span></a>
 
@@ -125,10 +127,10 @@
     </script>
 
 
-    <script src="scripts/header.js"></script>
-    <script src="scripts/skills.js"></script>
-    <script src="scripts/faqs.js"></script>
-    <script src="scripts/form.js"></script>
+    <script src="/scripts/header.js"></script>
+    <script src="/scripts/skills.js"></script>
+    <script src="/scripts/faqs.js"></script>
+    <script src="/scripts/form.js"></script>
 
 </body>
 
