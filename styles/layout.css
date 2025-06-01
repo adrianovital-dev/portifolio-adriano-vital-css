@@ -1,0 +1,112 @@
+.container {
+    height: 90vh;
+    padding: 5rem 5rem;
+    scroll-margin-top: 75px;
+}
+
+
+.columns-50-50 {
+    display: grid;
+    grid-template-columns: 0.50fr 0.50fr;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.left-column,
+.right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 2em;
+    max-width: 100%;
+}
+
+
+
+@media (max-width: 767px) {
+    .container {
+        padding: 2rem 2rem;
+        height: auto;
+        width: auto;
+    }
+
+    .columns-50-50 {
+        grid-template-columns: 1fr;
+    }
+
+    .stripe__text {
+        font-size: 16px;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+        /* Firefox */
+        -ms-overflow-style: none;
+        /* IE 10+ */
+    }
+
+    .left-column,
+    .right-column {
+        padding: 0 0;
+    }
+}
+
+.stripe__text::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        padding: 3rem 3rem;
+        height: auto;
+        width: auto;
+    }
+
+    .columns-50-50 {
+        grid-template-columns: 1fr;
+    }
+
+    .left-column,
+    .right-column {
+        padding: 0 0;
+    }
+}
+
+/* Laptop */
+@media (min-width: 1025px) and (max-width: 1279px) {
+
+    .left-column,
+    .right-column {
+        padding: 0 0em;
+    }
+
+    .container {
+        padding: 3rem 3rem;
+        height: auto;
+        width: auto;
+    }
+
+}
+
+
+/* desktops */
+@media (min-width: 1280px) and (max-width: 1535px) {
+    .container {
+        padding: 3rem 3rem;
+        height: auto;
+        width: auto;
+    }
+
+}
+
+/* Estilos para desktops */
+}
+
+/* ultrawide */
+@media (min-width: 1536px) {
+
+    /* Estilos para monitores grandes, TVs etc. */
+}

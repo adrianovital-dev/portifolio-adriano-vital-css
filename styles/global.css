@@ -1,16 +1,21 @@
+/* link import for global styles */
 @import url(/styles/sections/header.css);
 @import url(/styles/sections/banner.css);
 @import url(/styles/sections/service.css);
 @import url(/styles/sections/skills.css);
 @import url(/styles/sections/projects.css);
 @import url(/styles/sections/project.css);
-@import url(/styles/sections/steps.css);
+@import url(/styles/sections/work-process.css);
 @import url(/styles/sections/faq.css);
+@import url(/styles/sections/contact.css);
 @import url(/styles/sections/footer.css);
 
 @import url(/styles/components/buttons.css);
 @import url(/styles/components/forms.css);
 @import url(/styles/components/modal.css);
+
+@import url(/styles/layout.css);
+@import url(/styles/utilities.css);
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -49,64 +54,26 @@ body {
 }
 
 
-
-.container {
-    height: 90vh;
-    padding: 5rem 5rem;
-    scroll-margin-top: 75px;
-}
-
-.title-left {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
-    text-align: left;
-}
-
-.columns-50-50 {
-    display: grid;
-    grid-template-columns: 0.50fr 0.50fr;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.left-column,
-.right-column {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 0 2em;
-    max-width: 100%;
-}
-
 h1 {
     font-size: 23px;
     color: var(--black);
-    text-align: center;
-
 }
 
 h2 {
     font-size: 40px;
     font-weight: 700;
     color: var(--blue);
-    text-align: center
 }
 
 h3 {
     font-size: 28px;
     font-weight: 600;
-    text-align: left;
 }
 
 
 h4 {
     font-size: 22px;
     font-weight: 500;
-    text-align: left;
     margin-top: 0.5em;
     margin-bottom: 1em;
 }
@@ -115,7 +82,6 @@ h5 {
     font-size: 18px;
     margin-top: 0.5em;
     margin-bottom: 0.75em;
-    text-align: center;
 }
 
 h6 {
@@ -124,89 +90,3 @@ h6 {
 }
 
 
-
-@media (max-width: 767px) {
-    .container {
-        padding: 2rem 2rem;
-        height: auto;
-        width: auto;
-    }
-
-    .columns-50-50 {
-        grid-template-columns: 1fr;
-    }
-
-    .stripe__text {
-        font-size: 16px;
-        overflow-x: auto;
-        white-space: nowrap;
-        scrollbar-width: none;
-        /* Firefox */
-        -ms-overflow-style: none;
-        /* IE 10+ */
-    }
-
-    .left-column,
-    .right-column {
-        padding: 0 0;
-    }
-}
-
-.stripe__text::-webkit-scrollbar {
-    display: none;
-    /* Chrome, Safari */
-}
-
-/* Tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .container {
-        padding: 3rem 3rem;
-        height: auto;
-        width: auto;
-    }
-
-    .columns-50-50 {
-        grid-template-columns: 1fr;
-    }
-
-    .left-column,
-    .right-column {
-        padding: 0 0;
-    }
-}
-
-/* Laptop */
-@media (min-width: 1025px) and (max-width: 1279px) {
-
-    .left-column,
-    .right-column {
-        padding: 0 0em;
-    }
-
-    .container {
-        padding: 3rem 3rem;
-        height: auto;
-        width: auto;
-    }
-
-}
-
-
-/* desktops */
-@media (min-width: 1280px) and (max-width: 1535px) {
-    .container {
-        padding: 3rem 3rem;
-        height: auto;
-        width: auto;
-    }
-
-}
-
-/* Estilos para desktops */
-}
-
-/* ultrawide */
-@media (min-width: 1536px) {
-
-    /* Estilos para monitores grandes, TVs etc. */
-}

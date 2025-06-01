@@ -107,7 +107,6 @@
   }
 
   .projects__title {
-    text-align: center;
     margin-bottom: 2em;
   }
   .projects__content.container{
@@ -127,7 +126,6 @@
   }
 
   .projects__title {
-    text-align: center;
     margin-bottom: 2em;
   }
 }
