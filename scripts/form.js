@@ -1,4 +1,4 @@
-// Quando enviar por Email
+// When to send by Email
 document.getElementById("formContato").addEventListener("submit", function(e) {
     e.preventDefault(); // Impede envio automático
   
@@ -12,16 +12,16 @@ document.getElementById("formContato").addEventListener("submit", function(e) {
       });
   });
   
-  // Quando clicar no botão WhatsApp
+  // When you click on the WhatsApp button
   document.getElementById("enviarWhatsapp").addEventListener("click", function() {
-    // Pega os valores do formulário
+    // Get values ​​from the form
     const nome = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const telefone = document.getElementById("telephone").value;
     const pais = document.getElementById("pais").value;
     const mensagem = document.getElementById("mensagem").value;
   
-    // Verifica se todos os campos obrigatórios estão preenchidos
+    // Check if all required fields are filled in
     if (!nome || !email || !telefone || !pais || !mensagem) {
       alert("Por favor, preencha todos os campos antes de enviar pelo WhatsApp.");
       return;
@@ -33,12 +33,12 @@ document.getElementById("formContato").addEventListener("submit", function(e) {
   
     const urlWhatsapp = `https://wa.me/5527996476519?text=${mensagemWhatsapp}`;
   
-    // Abre o WhatsApp
+    // Open WhatsApp
     window.open(urlWhatsapp, '_blank');
     limparFormulario();
   });
   
-  // Função para limpar o formulário
+  // Function to clear the form
   function limparFormulario() {
     document.getElementById("formContato").reset();
   }

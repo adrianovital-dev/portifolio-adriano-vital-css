@@ -63,7 +63,6 @@ header.scrolled {
     font-size: 14px;
 }
 
-/* Base */
 .nav__toggle {
   display: none;
   flex-direction: column;
@@ -116,7 +115,7 @@ header.scrolled {
     }
 
     .nav__menu.show {
-        display: flex; !important;
+        display: flex;
     }
 
     .nav__btn {

@@ -50,7 +50,6 @@
 .faq__answer-text {
   text-align: justify;
   font-size: 13px;
-
 }
 
 .faq__answer-alert {
@@ -67,14 +66,11 @@
 
 .faq-item.active .faq-answer {
   max-height: 200px;
-  /* valor suficiente para a resposta */
   opacity: 1;
-
 }
 
 .faq-item.active .faq-toggle-icon {
-  transform: rotate(45deg);
-  /* muda o "+" para "×" visualmente */
+  transform: rotate(45deg);  /* change the "+" to "×" visually */
 }
 
 .faq-space {
@@ -97,8 +93,7 @@
   animation: fadeIn 0.4s ease-in-out;
 }
 
-
-
+/* Responsive adjustments */
 
 @media (max-width: 767px) {
   .faqs {
@@ -111,6 +106,5 @@
 @media (min-width: 768px) and (max-width: 1024px){
   .faqs {
     padding: 3em 3em;
-
   }
 }

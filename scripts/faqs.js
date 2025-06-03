@@ -4,14 +4,14 @@ faqItems.forEach(item => {
   const questionBtn = item.querySelector('.faq-question');
 
   questionBtn.addEventListener('click', () => {
-    // Fecha todos os itens, exceto o clicado
+    // Closes all items except the one clicked
     faqItems.forEach(otherItem => {
       if (otherItem !== item) {
         otherItem.classList.remove('active');
       }
     });
 
-    // Alterna o item clicado
+    // Toggles the clicked item
     item.classList.toggle('active');
   });
 });

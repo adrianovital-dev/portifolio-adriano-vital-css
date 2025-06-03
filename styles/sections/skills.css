@@ -13,43 +13,28 @@
     margin: 1em 0;
 }
 
-
 .skills__technology-list li {
     display: flex;
     flex-direction: column;
-    /* Alinha o conteúdo verticalmente */
     height: 90px;
     width: 100px;
-    /* Largura fixa para os itens */
     align-items: center;
-    /* Centraliza o ícone e o texto */
     justify-content: center;
-    /* Centraliza verticalmente */
     list-style: none;
-    /* Remove o estilo de lista */
     border: 1px solid var(--gray-lighter);
-    /* Adiciona uma borda suave */
     border-radius: 20px;
-    /* Bordas arredondadas */
     padding: 1em;
-    /* Espaçamento interno */
     background-color: var(--white);
-    /* Fundo branco */
     box-shadow: 0 2px 4px var(--gray-lighter);
-    /* Sombra leve */
     text-align: center;
-    /* Centraliza o texto */
     transition: all 0.3s ease;
     font-size: 13px;
 }
 
-
 .skills__technology-list li i {
     margin-bottom: 0.3em;
     color: var(--gray);
-    /* Cor do ícone */
     font-size: 35px;
-
 }
 
 .skills__technology-list li:hover {
@@ -89,7 +74,7 @@
     text-align: center;
 }
 
-
+/* Responsive adjustments */
 
 @media (max-width: 1279px) {
     .skills__technology-item {
@@ -104,7 +89,6 @@
 
     .skills__btn {
         align-items: center;
-
     }
 
     .skills__btn h6 {
@@ -119,9 +103,6 @@
         gap: 0.5em;
     }
 }
-
-
-
 
 
 @media (min-width: 1280px) and (max-width: 1535px) {

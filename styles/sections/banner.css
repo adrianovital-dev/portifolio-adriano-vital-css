@@ -19,6 +19,7 @@
     margin-top: 10em;
 }
 
+/* === left container === */
 .banner__image {
     display: flex;
     justify-content: center;
@@ -33,6 +34,7 @@
     transition: transform 0.3s ease;
 }
 
+/* === Right container === */
 
 .banner__content-text {
     flex: 1;
@@ -45,6 +47,7 @@
     line-height: 1.6em;
 }
 
+/* === Right container btn === */
 .banner__btn {
     display: flex;
     align-items: center;
@@ -58,6 +61,8 @@
     flex-wrap: wrap;
     gap: 1em;
 }
+
+/* === Right container icons social === */
 
 .banner__social-list {
     display: flex;
@@ -76,6 +81,8 @@
     color: var(--blue);
     transform: translateY(-4px) scale(1.05);
 }
+
+
 
 /* Banner Stripes */
 
@@ -126,9 +133,7 @@
 }
 
 
-/* RESPONSIVIDADE */
-
-/* Mobile (até 767px) */
+/* Responsive adjustments */
 @media (max-width: 767px) {
     .banner {
         height: auto;
@@ -165,7 +170,6 @@
     }
 }
 
-/* Tablet (768px a 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
     .banner {
         height: auto;
@@ -180,7 +184,6 @@
         margin-right: 0em;
         margin-top: 0em;
     }
-
 
     .banner__btn {
         flex-direction: column;
@@ -203,7 +206,6 @@
     }
 }
 
-/* Laptop (1025px a 1279px) */
 @media (min-width: 1025px) and (max-width: 1279px) {
     .banner__content {
         gap: 1em;
@@ -227,7 +229,6 @@
     }
 }
 
-/* Desktop (1280px a 1535px) */
 @media (min-width: 1280px) and (max-width: 1535px) {
     .banner__content {
         gap: 2em;
@@ -239,7 +240,6 @@
     }
 }
 
-/* Ultrawide (1536px+) */
 @media (min-width: 1536px) {
     .banner__content {
         gap: 1em;
